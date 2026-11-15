@@ -1,0 +1,5 @@
+===========
+posamentier
+===========
+
+.. include:: intro.rst

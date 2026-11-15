@@ -1,0 +1,36 @@
+{
+  "citations": [
+    {
+      "id": "posamentier-2012",
+      "author": "Alfred S. Posamentier & Ingmar Lehmann (Ch. 7 by Ana Lúcia Braz Dias)",
+      "title": "The Glorious Golden Ratio",
+      "publisher": "Prometheus Books, Amherst, NY",
+      "year": "2011 / 2012",
+      "isbn": "978-1-61614-423-4",
+      "ebook_isbn": "978-1-61614-424-1"
+    },
+    {
+      "id": "huntley-1970",
+      "author": "H. E. Huntley",
+      "title": "The Divine Proportion: A Study in Mathematical Beauty",
+      "publisher": "Dover Publications, New York",
+      "year": "1970",
+      "isbn": "978-0-486-22254-7"
+    },
+    {
+      "id": "knott-fib",
+      "author": "Dr. Ron Knott",
+      "title": "Fibonacci Numbers, the Golden Section and the Golden String",
+      "publisher": "University of Surrey",
+      "year": "1996-2025",
+      "url": "https://r-knott.surrey.ac.uk/Fibonacci/fib.html"
+    },
+    {
+      "id": "walser-2001",
+      "author": "Hans Walser",
+      "title": "The Golden Section",
+      "publisher": "Mathematical Association of America",
+      "year": "2001"
+    }
+  ]
+}

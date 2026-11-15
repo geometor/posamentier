@@ -1,0 +1,30 @@
+{
+  "catalog": "posamentier",
+  "sister_repositories": ["divine", "knott", "huntley", "elements", "phyllotaxis", "trees", "polyhedra"],
+  "classification_legend": {
+    "equivalent": "Mathematically identical construction and algebraic invariant locus",
+    "variant": "Projective, dual, or arc-transfer shade of the same underlying quadratic identity",
+    "net-new": "Distinct geometric locus not yet modeled in geometor/divine or geometor/knott"
+  },
+  "mappings": [
+    { "posamentier_id": "POS-1.01", "classification": "equivalent", "divine": "GC-01.01", "knott": "KNOTT-1.1", "huntley": "HUNT-02.01", "elements": "G.60 (II.11)", "invariant_root": "1:2:sqrt(5) leg-midpoint arc extension" },
+    { "posamentier_id": "POS-1.02", "classification": "equivalent", "divine": "GC-01.02", "knott": "KNOTT-1.1", "huntley": "HUNT-02.02", "elements": "G.185 (VI.30)", "invariant_root": "1:2:sqrt(5) hypotenuse secant transfer" },
+    { "posamentier_id": "POS-1.03", "classification": "net-new", "divine": "cousin:GC-03.04", "knott": null, "huntley": null, "elements": "VI.3", "invariant_root": "Euclid VI.3 angle bisector on 1x3 square grid" },
+    { "posamentier_id": "POS-1.04", "classification": "variant", "divine": "GC-03.01", "knott": "KNOTT-1.2", "huntley": null, "elements": null, "invariant_root": "Circle secant cutting sqrt(5) diagonal of 1x2 rectangle" },
+    { "posamentier_id": "POS-1.05", "classification": "variant", "divine": "GC-01.01", "knott": "KNOTT-1.1", "huntley": null, "elements": "III.31, VI.8", "invariant_root": "Thales semicircle mean-proportional altitude" },
+    { "posamentier_id": "POS-1.06", "classification": "equivalent", "divine": "GC-02.01", "knott": null, "huntley": null, "elements": "III.35", "invariant_root": "Odom intersecting chords x(x+1)=1 on equilateral midline" },
+    { "posamentier_id": "POS-1.07", "classification": "net-new", "divine": "cousin:GC-03.06", "knott": null, "huntley": null, "elements": "IV.4", "invariant_root": "Incircle radius r = 1/phi in 2:sqrt(5):sqrt(5) isosceles triangle" },
+    { "posamentier_id": "POS-1.08", "classification": "net-new", "divine": null, "knott": null, "huntley": null, "elements": null, "invariant_root": "sqrt(2)-diagonal circle & equilateral radical intersection" },
+    { "posamentier_id": "POS-1.09", "classification": "net-new", "divine": "dual:GC-06.01", "knott": null, "huntley": null, "elements": "III.36", "invariant_root": "Tangent-secant power PT^2 = PA * PB => x(x+1)=1" },
+    { "posamentier_id": "POS-1.10", "classification": "equivalent", "divine": "GC-04.01", "knott": null, "huntley": "HUNT-03.01", "elements": "III.36, VI.3", "invariant_root": "3-4-5 half-angle tangent 1/2 yielding 1:2:sqrt(5)" },
+    { "posamentier_id": "POS-1.11", "classification": "variant", "divine": "GC-06.02", "knott": null, "huntley": null, "elements": "III.36", "invariant_root": "Concentric radii (1, 2, 4) power-of-point secant" },
+    { "posamentier_id": "POS-1.12", "classification": "variant", "divine": "GC-06.04", "knott": null, "huntley": null, "elements": null, "invariant_root": "Collinear unit circles 1:2:sqrt(5) transversal" },
+    { "posamentier_id": "POS-1.13", "classification": "equivalent", "divine": "GC-06.07", "knott": null, "huntley": null, "elements": null, "invariant_root": "Descartes/Soddy semicircle Sangaku curvature quadratic" },
+    { "posamentier_id": "POS-1.14", "classification": "net-new", "divine": null, "knott": null, "huntley": null, "elements": null, "invariant_root": "Hans Walser Cartesian radical-axis circle intersection" },
+    { "posamentier_id": "POS-1.15", "classification": "variant", "divine": "GC-01.02", "knott": "KNOTT-1.1", "huntley": "HUNT-02.02", "elements": null, "invariant_root": "Two-arc difference along 1:2:sqrt(5) right triangle" },
+    { "posamentier_id": "POS-1.16", "classification": "equivalent", "divine": "GC-01.05", "knott": null, "huntley": null, "elements": null, "invariant_root": "Kurt Hofstetter 5-circle Mascheroni compass-only locus" },
+    { "posamentier_id": "POS-4.01", "classification": "net-new", "divine": null, "knott": null, "huntley": null, "elements": null, "invariant_root": "Adjacent semicircles cutting square diagonal in phi" },
+    { "posamentier_id": "POS-5.01", "classification": "net-new", "divine": null, "knott": null, "huntley": null, "elements": null, "invariant_root": "Hexagram chord power in inscribed circle" },
+    { "posamentier_id": "POS-7.01", "classification": "net-new", "divine": null, "knott": null, "huntley": null, "elements": null, "invariant_root": "Geometric series canopy closure 1/(1 - r) with r = 1/phi (bridges geometor/trees)" }
+  ]
+}

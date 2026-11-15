@@ -1,0 +1,52 @@
+{
+  "persons": [
+    {
+      "id": "posamentier",
+      "name": "Alfred S. Posamentier",
+      "dates": "b. 1942",
+      "role": "Co-Author",
+      "work": "The Glorious Golden Ratio (Prometheus Books, 2011/2012)"
+    },
+    {
+      "id": "lehmann",
+      "name": "Ingmar Lehmann",
+      "dates": "b. 1946",
+      "role": "Co-Author",
+      "work": "The Glorious Golden Ratio (Prometheus Books, 2011/2012)"
+    },
+    {
+      "id": "dias",
+      "name": "Ana Lúcia Braz Dias",
+      "role": "Chapter 7 Contributor (Fractals and the Golden Ratio)",
+      "work": "The Glorious Golden Ratio, Ch. 7 (pp. 269-292)"
+    },
+    {
+      "id": "odom",
+      "name": "George Odom",
+      "dates": "1941 – 2010",
+      "role": "Geometer (Equilateral Midline Golden Section, 1983)"
+    },
+    {
+      "id": "huntley",
+      "name": "Herbert Edwin Huntley",
+      "dates": "1892 – 1975",
+      "role": "Physicist & Geometer (3-4-5 Right-Triangle Golden Section, 1970)"
+    },
+    {
+      "id": "walser",
+      "name": "Hans Walser",
+      "dates": "b. 1945",
+      "role": "Geometer (Coordinate-Grid Golden Ratio Circles)"
+    },
+    {
+      "id": "hofstetter",
+      "name": "Kurt Hofstetter",
+      "role": "Geometer (5-Step Compass-Only Golden Section, 2002)"
+    },
+    {
+      "id": "phi-architect",
+      "name": "phi ARCHITECT",
+      "role": "GEOMETOR Curator & Symbolic Modeler"
+    }
+  ]
+}
