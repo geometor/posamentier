@@ -1,9 +1,12 @@
 :navigation: header
 :order: 1
+:type: book
 :nav_title: Mathematical Catalog
+:breadcrumb_title: Mathematical Catalog
 :layout: book
 :book_title: The Glorious Golden Ratio — Mathematical Catalog & Concordance
 :author: Alfred S. Posamentier & Ingmar Lehmann · Exact Synthesis by GEOMETOR
+:excerpt: An exact symbolic mathematical catalog, Euclidean construction taxonomy, and cross-corpus equivalence triage inspired by Posamentier & Lehmann's The Glorious Golden Ratio.
 
 .. _posamentier-catalog:
 

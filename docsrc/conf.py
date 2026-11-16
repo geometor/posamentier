@@ -58,10 +58,10 @@ for _sister in (
             (os.fspath(_inv), None),
         )
 
+site_title = "Alfred S. Posamentier & Ingmar Lehmann"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 html_theme = "foundation"
-html_title = "GEOMETOR \u2022 posamentier"
-blog_title = "GEOMETOR \u2022 posamentier"
-project = "GEOMETOR \u2022 posamentier"
 html_static_path: list[str] = ["_static"]
 autoapi_add_toctree_entry = False
 if "intro.rst" not in exclude_patterns:  # noqa: F405
