@@ -1,0 +1,11 @@
+src.geometor.posamentier.__main__
+=================================
+
+.. py:module:: src.geometor.posamentier.__main__
+
+.. autoapi-nested-parse::
+
+   Package entry point for ``python -m geometor.posamentier``.
+
+
+

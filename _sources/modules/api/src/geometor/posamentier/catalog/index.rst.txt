@@ -1,0 +1,82 @@
+src.geometor.posamentier.catalog
+================================
+
+.. py:module:: src.geometor.posamentier.catalog
+
+.. autoapi-nested-parse::
+
+   Catalog manifest loader and exact-symbolic validation helpers.
+
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.catalog.CatalogEntrySpec
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.catalog.assert_no_floats
+   src.geometor.posamentier.catalog.load_catalog_manifest
+
+
+Module Contents
+---------------
+
+.. py:class:: CatalogEntrySpec
+
+   Metadata descriptor for an atomic mathematical catalog entry.
+
+
+   .. py:attribute:: id
+      :type:  str
+
+
+   .. py:attribute:: chapter
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: source_locus
+      :type:  str
+
+
+   .. py:attribute:: field
+      :type:  str
+      :value: 'Q(phi)'
+
+
+
+   .. py:attribute:: status
+      :type:  str
+      :value: 'planned'
+
+
+
+.. py:function:: assert_no_floats(expr: object) -> None
+
+   Raise ``TypeError`` if ``expr`` is a Python ``float`` or contains ``sympy.Float`` atoms.
+
+   :param expr: Python object or SymPy symbolic expression to inspect.
+
+   :raises TypeError: If any floating-point approximation is present.
+
+
+.. py:function:: load_catalog_manifest(manifest_path: pathlib.Path | None = None) -> list[CatalogEntrySpec]
+
+   Load atomic catalog entries from ``resources/catalog_manifest.json``.
+
+   :param manifest_path: Optional override path to a catalog manifest JSON file.
+
+   :returns: Ordered list of :class:`CatalogEntrySpec` records.
+
+
