@@ -13,7 +13,7 @@ Mission
 Catalogs in This Archive
 ------------------------
 
-- **`The Glorious Golden Ratio — Mathematical Catalog & Concordance <https://geometor.github.io/posamentier/catalog/>`_** — Exact symbolic mathematical catalog and multi-work concordance of Posamentier and Lehmann's golden ratio theorems.
+- `The Glorious Golden Ratio — Mathematical Catalog & Concordance <https://geometor.github.io/posamentier/catalog/>`_ — Exact symbolic mathematical catalog and multi-work concordance of Posamentier and Lehmann's golden ratio theorems.
 
 Repository Contents
 -------------------
