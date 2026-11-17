@@ -1,5 +1,6 @@
-:navigation: footer
-:order: 10
+:navigation: header
+:order: 16
+:nav_title: Glossary
 
 ========
 Glossary
