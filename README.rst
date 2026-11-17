@@ -15,15 +15,6 @@ Catalogs in This Archive
 
 - `The Glorious Golden Ratio — Mathematical Catalog & Concordance <https://geometor.github.io/posamentier/catalog/>`_ — Exact symbolic mathematical catalog and multi-work concordance of Posamentier and Lehmann's golden ratio theorems.
 
-Python Package & Modules
-------------------------
-
-The ``geometor-posamentier`` Python package (``import geometor.posamentier``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
-
-- ``catalog.py`` — Catalog manifest loader and exact-symbolic validation helpers.
-- ``app.py`` — Command-line interface for ``geometor.posamentier``.
-
-See the `API Reference <https://geometor.github.io/posamentier/modules/>`_ for full module documentation.
 
 Repository Contents
 -------------------
