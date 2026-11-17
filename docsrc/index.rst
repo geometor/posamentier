@@ -8,8 +8,7 @@ Alfred S. Posamentier & Ingmar Lehmann
 
 The mathematical catalog formalizes the geometric constructions and algebraic relations inspired by :person:`Alfred S. Posamentier` and :person:`Ingmar Lehmann`'s comprehensive work *The Glorious Golden Ratio* (2011). Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, these theorems are liberated into exact symbolic algebra over $\mathbb{Q}(\phi)$, theme-adaptive vector diagrams, and cross-corpus concordances speaking one shared geometric language.
 
-.. collection::
-   :type: book
+.. reference-directory::
    :sort: order
 
 .. toctree::
@@ -18,7 +17,7 @@ The mathematical catalog formalizes the geometric constructions and algebraic re
 
    catalog/index
    about/index
-   persons
+   people/index
    bibliography
    usage/index
    demos/index
