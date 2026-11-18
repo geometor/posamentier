@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/posamentier",
+  "rights_category": "non-derivative-catalog",
+  "sources": [
+    {
+      "id": "posamentier-2012-prometheus",
+      "title": "The Glorious Golden Ratio (2012)",
+      "author": "Alfred S. Posamentier & Ingmar Lehmann",
+      "year": "2012",
+      "era": "17 U.S.C. § 102(b) Catalog",
+      "languages": [
+        "English"
+      ],
+      "site_url": "https://geometor.github.io/posamentier/",
+      "local_path": "resources/catalog_manifest.json",
+      "pages": null,
+      "publisher": "Prometheus Books",
+      "rights": "Non-derivative symbolic catalog (17 U.S.C. § 102(b))",
+      "excerpt": "Independent SymPy catalog cross-referencing Posamentier & Lehmann's golden ratio problems."
+    }
+  ]
+}
