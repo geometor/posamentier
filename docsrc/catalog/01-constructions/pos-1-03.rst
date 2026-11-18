@@ -1,0 +1,48 @@
+:type: construction
+:order: 3
+:excerpt: 1x3 Three-Square Grid Angle Bisector Section — exact symbolic construction over Q(phi) (Net-New).
+
+POS-1.03 · 1x3 Three-Square Grid Angle Bisector Section
+=======================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Net-New** | **Concordance:** Cousin of GC-03.04 · :ref:`Euclid VI.3 <elements:vi.3>`
+
+.. enunciation::
+
+   On a unit-square grid forming right triangle :g:`ABC` with legs :math:`|AB|=1` and :math:`|AC|=2`, the interior angle bisector of :g:`B` cuts the unit square side :g:`AD` at :g:`P` in the golden ratio :math:`|AP|/|PD| = \phi`.
+
+.. picture:: pos-1-03.svg
+   :alt: POS-1.03 — 1x3 Three-Square Grid Angle Bisector Section
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct two stacked unit squares :g:`ABED` and :g:`DEFC` along :math:`[0,1]\times[0,2]`.
+
+.. step::
+
+   Join hypotenuse :g:`BC` of length :math:`\sqrt{5}`.
+
+.. step::
+
+   Construct the angle bisector :g:`BP` of :math:`\angle ABC`, meeting :g:`AD` at :g:`P`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+By :ref:`Euclid VI.3 <elements:vi.3>`, :math:`|AP|/|PC| = |AB|/|BC| = 1/\sqrt{5}`. Since :math:`|AC|=2`, :math:`|AP| = 2/(1+\sqrt{5}) = 1/\phi`, while :math:`|PD| = 1 - 1/\phi = 1/\phi^2`, so :math:`|AP|/|PD| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AP` / :g:`PD` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_03`

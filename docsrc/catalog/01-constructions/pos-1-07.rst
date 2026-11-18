@@ -1,0 +1,48 @@
+:type: construction
+:order: 7
+:excerpt: 2:sqrt(5):sqrt(5) Isosceles Triangle Incircle Altitude Section — exact symbolic construction over Q(phi) (Net-New).
+
+POS-1.07 · 2:sqrt(5):sqrt(5) Isosceles Triangle Incircle Altitude Section
+=========================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Net-New** | **Concordance:** Cousin of GC-03.06 · :ref:`Euclid IV.4 <elements:iv.4>`
+
+.. enunciation::
+
+   In an isosceles triangle :g:`ABC` of base :math:`|AB|=2` and legs :math:`\sqrt{5}`, the incircle :g:`cI` of radius :math:`1/\phi` cuts the altitude :g:`OC` at :g:`T` so that :math:`|OT|/|TC| = \phi`.
+
+.. picture:: pos-1-07.svg
+   :alt: POS-1.07 — 2:sqrt(5):sqrt(5) Isosceles Triangle Incircle Altitude Section
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct isosceles :g:`ABC` with :g:`A` :math:`=(-1,0)`, :g:`B` :math:`=(1,0)`, :g:`C` :math:`=(0,2)`, and base midpoint :g:`O` :math:`=(0,0)`.
+
+.. step::
+
+   Construct the incenter :g:`I` :math:`=(0, 1/\phi)` and incircle :g:`cI` tangent to :g:`AB` at :g:`O`.
+
+.. step::
+
+   Mark the upper intersection :g:`T` of :g:`cI` with altitude :g:`OC`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Semiperimeter :math:`s = 1 + \sqrt{5} = 2\phi` and area :math:`K = 2`, so inradius :math:`r = K/s = 1/\phi`. Thus :math:`|OT| = 2/\phi` and :math:`|TC| = 2 - 2/\phi = 2/\phi^2`, giving :math:`|OT|/|TC| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`OT` / :g:`TC` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_07`

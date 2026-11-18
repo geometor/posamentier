@@ -1,0 +1,48 @@
+:type: construction
+:order: 4
+:excerpt: 1x2 Double-Square Shared-Midpoint Diagonal Circle — exact symbolic construction over Q(phi) (Variant).
+
+POS-1.04 · 1x2 Double-Square Shared-Midpoint Diagonal Circle
+============================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Variant** | **Concordance:** GC-03.01 · KNOTT-1.2
+
+.. enunciation::
+
+   In a :math:`1\times 2` rectangle :g:`ABCD` with center :g:`O`, the inscribed circle :g:`cOM` of radius :math:`1/2` cuts diagonal :g:`AC` at :g:`P` and :g:`Q` so that :math:`|PQ|/|AP| = \phi`.
+
+.. picture:: pos-1-04.svg
+   :alt: POS-1.04 — 1x2 Double-Square Shared-Midpoint Diagonal Circle
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct :math:`1\times 2` rectangle :g:`ABCD` with :g:`A` :math:`=(0,0)`, :g:`B` :math:`=(2,0)`, :g:`C` :math:`=(2,1)`, :g:`D` :math:`=(0,1)`.
+
+.. step::
+
+   Mark center :g:`O` :math:`=(1, 1/2)` and base midpoint :g:`M` :math:`=(1,0)`, and draw circle :g:`cOM`.
+
+.. step::
+
+   Intersect :g:`cOM` with diagonal :g:`AC` at :g:`P` (near :g:`A`) and :g:`Q` (near :g:`C`).
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Diagonal :math:`|AC| = \sqrt{5}` and diameter :math:`|PQ| = 1`. By symmetry, :math:`|AP| = |QC| = (\sqrt{5}-1)/2 = 1/\phi`, giving :math:`|PQ|/|AP| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`PQ` / :g:`AP` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_04`

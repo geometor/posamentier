@@ -1,0 +1,48 @@
+:type: construction
+:order: 9
+:excerpt: Circle Unit Chord & Equal External Tangent Secant Cut — exact symbolic construction over Q(phi) (Net-New).
+
+POS-1.09 · Circle Unit Chord & Equal External Tangent Secant Cut
+================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Net-New** | **Concordance:** Dual of GC-06.01 · :ref:`Euclid III.36 <elements:iii.36>`
+
+.. enunciation::
+
+   From external point :g:`P`, draw tangent :g:`PT` of length :math:`1` to circle :g:`cO` of diameter :math:`1`. Secant :g:`PO` cuts :g:`cO` at :g:`A` and :g:`B` so that :math:`|AB|/|PA| = \phi`.
+
+.. picture:: pos-1-09.svg
+   :alt: POS-1.09 — Circle Unit Chord & Equal External Tangent Secant Cut
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Set :g:`P` :math:`=(0,0)` and tangent point :g:`T` :math:`=(1,0)`.
+
+.. step::
+
+   Construct circle :g:`cO` centered at :g:`O` :math:`=(1, 1/2)` through :g:`T` (diameter :math:`1`).
+
+.. step::
+
+   Draw secant line :g:`PO`, cutting :g:`cO` at :g:`A` and :g:`B`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+By :ref:`Tangent–Secant Power (Euclid III.36) <elements:iii.36>`, :math:`|PA|(|PA| + |AB|) = |PT|^2 = 1`. With :math:`|AB|=1`, :math:`|PA| = 1/\phi`, so :math:`|AB|/|PA| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AB` / :g:`PA` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_09`

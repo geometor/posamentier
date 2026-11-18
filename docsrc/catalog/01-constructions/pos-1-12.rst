@@ -1,0 +1,48 @@
+:type: construction
+:order: 12
+:excerpt: Three Adjacent Congruent Unit Circles Outer Secant — exact symbolic construction over Q(phi) (Variant).
+
+POS-1.12 · Three Adjacent Congruent Unit Circles Outer Secant
+=============================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Variant** | **Concordance:** GC-06.04 · 1:2:sqrt(5) center-line transversal
+
+.. enunciation::
+
+   Three unit circles :g:`c1`, :g:`c2`, :g:`c3` are collinearly tangent. The line joining the bottom of :g:`c1` (:g:`A`) to the top of :g:`c3` (:g:`B`) cuts :g:`c2` at :g:`M` and :g:`N` so that :math:`|MN|/|NB| = \phi`.
+
+.. picture:: pos-1-12.svg
+   :alt: POS-1.12 — Three Adjacent Congruent Unit Circles Outer Secant
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct unit circles :g:`c1` at :math:`(-2,0)`, :g:`c2` at :math:`(0,0)`, and :g:`c3` at :math:`(2,0)`.
+
+.. step::
+
+   Join :g:`A` :math:`=(-2,-1)` to :g:`B` :math:`=(2,1)` through :g:`O` :math:`=(0,0)`.
+
+.. step::
+
+   Mark intersections :g:`M` and :g:`N` of :g:`AB` with :g:`c2`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Since :math:`|OB| = \sqrt{2^2 + 1^2} = \sqrt{5}` and :math:`|ON| = 1`, we have :math:`|MN| = 2` and :math:`|NB| = \sqrt{5} - 1 = 2/\phi`, so :math:`|MN|/|NB| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`MN` / :g:`NB` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_12`

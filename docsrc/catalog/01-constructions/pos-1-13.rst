@@ -1,0 +1,44 @@
+:type: construction
+:order: 13
+:excerpt: Three Mutually Tangent Circles Inscribed in a Semicircle — exact symbolic construction over Q(phi) (Equivalent).
+
+POS-1.13 · Three Mutually Tangent Circles Inscribed in a Semicircle
+===================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Equivalent** | **Concordance:** GC-06.07 · Descartes / Soddy Sangaku quadratic
+
+.. enunciation::
+
+   Three mutually tangent unit circles :g:`cC1`, :g:`cC0`, :g:`cC2` sit on diameter :g:`AB` inside semicircle :g:`cO`. The radius :g:`OB` and center-offset :g:`OT2` satisfy :math:`|OT2|/|T2B| = \phi`.
+
+.. picture:: pos-1-13.svg
+   :alt: POS-1.13 — Three Mutually Tangent Circles Inscribed in a Semicircle
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Place three unit circles :g:`cC1`, :g:`cC0`, :g:`cC2` at :math:`(-2,1), (0,1), (2,1)` tangent to diameter :g:`AB` at :g:`T1`, :g:`O`, :g:`T2`.
+
+.. step::
+
+   Construct outer semicircle :g:`cO` centered at :g:`O` tangent to :g:`cC1` and :g:`cC2`, meeting :g:`AB` at :g:`A` and :g:`B`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+The distance from :g:`O` to :g:`C2` is :math:`\sqrt{2^2 + 1^2} = \sqrt{5}`, so the outer radius is :math:`|OB| = \sqrt{5} + 1 = 2\phi`. With :math:`|OT2| = 2` and :math:`|T2B| = 2\phi - 2 = 2/\phi`, :math:`|OT2|/|T2B| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`OT2` / :g:`T2B` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_13`
