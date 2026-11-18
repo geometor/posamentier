@@ -1,0 +1,111 @@
+src.geometor.posamentier.constructions
+======================================
+
+.. py:module:: src.geometor.posamentier.constructions
+
+.. autoapi-nested-parse::
+
+   Exact symbolic ``geometor.model`` constructions for ``geometor.posamentier``.
+
+   Every construction uses 100% exact SymPy coordinates over ``Q(phi)`` or
+   cyclotomic radical extensions with ``Model(..., auto_intersect=False)`` and zero
+   floating-point approximations.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.constructions.CONSTRUCTION_BUILDERS
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.constructions.ConstructionSpec
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.constructions.verify_golden_ratio
+   src.geometor.posamentier.constructions.build_construction
+
+
+Module Contents
+---------------
+
+.. py:class:: ConstructionSpec
+
+   Verified symbolic construction model paired with golden-section endpoints.
+
+
+   .. py:attribute:: id
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: model
+      :type:  geometor.model.Model
+
+
+   .. py:attribute:: major
+      :type:  tuple[str, str]
+
+
+   .. py:attribute:: minor
+      :type:  tuple[str, str]
+
+
+   .. py:attribute:: given_points
+      :type:  frozenset[str]
+
+
+   .. py:attribute:: golden_points
+      :type:  frozenset[str]
+
+
+   .. py:attribute:: golden_circles
+      :type:  frozenset[str]
+
+
+   .. py:attribute:: extra_segments
+      :type:  tuple[tuple[str, str, str], ...]
+      :value: ()
+
+
+
+   .. py:method:: ratio() -> sympy.Expr
+
+      Return exact symbolic length ratio ``|major| / |minor|``.
+
+
+
+   .. py:method:: to_svg(graphic_id: str | None = None) -> str
+
+      Render this construction to a calibrated ``.euclid-graphic`` SVG.
+
+
+
+.. py:function:: verify_golden_ratio(spec: ConstructionSpec) -> sympy.Expr
+
+   Assert zero floats in ``spec.model`` and exact equality ``ratio == phi``.
+
+
+.. py:data:: CONSTRUCTION_BUILDERS
+   :type:  dict[str, collections.abc.Callable[[], ConstructionSpec]]
+
+.. py:function:: build_construction(entry_id: str) -> ConstructionSpec
+
+   Build and return the verified :class:`ConstructionSpec` for ``entry_id``.
+
+

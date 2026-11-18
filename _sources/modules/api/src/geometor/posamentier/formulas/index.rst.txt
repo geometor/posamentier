@@ -1,0 +1,114 @@
+src.geometor.posamentier.formulas
+=================================
+
+.. py:module:: src.geometor.posamentier.formulas
+
+.. autoapi-nested-parse::
+
+   Exact SymPy symbolic formula verifiers for the Posamentier Appendix of Formulas.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.formulas.PHI
+   src.geometor.posamentier.formulas.PSI
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.formulas.verify_phi_power_linearization
+   src.geometor.posamentier.formulas.verify_binet_fibonacci
+   src.geometor.posamentier.formulas.verify_binet_lucas
+   src.geometor.posamentier.formulas.verify_cassini_identity
+   src.geometor.posamentier.formulas.verify_pentagonal_trig
+   src.geometor.posamentier.formulas.verify_kepler_triangle
+   src.geometor.posamentier.formulas.verify_golden_cuboid
+   src.geometor.posamentier.formulas.verify_heron_and_inradius
+   src.geometor.posamentier.formulas.verify_euler_oi_distance
+   src.geometor.posamentier.formulas.verify_stewart_theorem
+   src.geometor.posamentier.formulas.verify_ptolemy_cyclic_quad
+   src.geometor.posamentier.formulas.verify_brahmagupta_area
+   src.geometor.posamentier.formulas.verify_morley_trisector_side
+
+
+Module Contents
+---------------
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+.. py:data:: PSI
+   :type:  sympy.Expr
+
+.. py:function:: verify_phi_power_linearization(n: int) -> sympy.Expr
+
+   Verify ``phi^n == F_n * phi + F_{n-1}`` for integer ``n >= 1``.
+
+
+.. py:function:: verify_binet_fibonacci(n: int) -> sympy.Expr
+
+   Verify Binet's formula ``F_n == (phi^n - psi^n) / sqrt(5)``.
+
+
+.. py:function:: verify_binet_lucas(n: int) -> sympy.Expr
+
+   Verify Binet's Lucas formula ``L_n == phi^n + psi^n``.
+
+
+.. py:function:: verify_cassini_identity(n: int) -> sympy.Expr
+
+   Verify Cassini's identity ``F_{n+1}*F_{n-1} - F_n^2 == (-1)^n``.
+
+
+.. py:function:: verify_pentagonal_trig() -> dict[str, sympy.Expr]
+
+   Verify exact radical trigonometric values for ``18°`` and ``36°``.
+
+
+.. py:function:: verify_kepler_triangle() -> sympy.Expr
+
+   Verify Kepler's right triangle ``1^2 + (sqrt(phi))^2 == phi^2``.
+
+
+.. py:function:: verify_golden_cuboid() -> tuple[sympy.Expr, sympy.Expr]
+
+   Verify Golden Cuboid ``(1, phi, phi^2)`` space diagonal ``2*phi`` and surface area.
+
+
+.. py:function:: verify_heron_and_inradius(a: sympy.Expr, b: sympy.Expr, c: sympy.Expr) -> tuple[sympy.Expr, sympy.Expr, sympy.Expr]
+
+   Return exact ``(area, inradius, circumradius)`` for triangle ``(a, b, c)``.
+
+
+.. py:function:: verify_euler_oi_distance(a: sympy.Expr, b: sympy.Expr, c: sympy.Expr) -> sympy.Expr
+
+   Verify Euler's theorem ``OI^2 == R*(R - 2*r)`` symbolically on ``(a, b, c)``.
+
+
+.. py:function:: verify_stewart_theorem(a: sympy.Expr, b: sympy.Expr, c: sympy.Expr, m: sympy.Expr, n: sympy.Expr, d: sympy.Expr) -> sympy.Expr
+
+   Return exact residual ``b^2*m + c^2*n - a*(d^2 + m*n)`` for Stewart's theorem.
+
+
+.. py:function:: verify_ptolemy_cyclic_quad(r: sympy.Expr) -> sympy.Expr
+
+   Verify Ptolemy's theorem ``a*c + b*d == e*f`` on an inscribed cyclic rectangle.
+
+
+.. py:function:: verify_brahmagupta_area(a: sympy.Expr, b: sympy.Expr, c: sympy.Expr, d: sympy.Expr) -> sympy.Expr
+
+   Return exact Brahmagupta cyclic quadrilateral area ``sqrt((s-a)(s-b)(s-c)(s-d))``.
+
+
+.. py:function:: verify_morley_trisector_side() -> sympy.Expr
+
+   Verify Morley's equilateral side ``8*R*sin(A/3)*sin(B/3)*sin(C/3)`` for equilateral ABC.
+
+

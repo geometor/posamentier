@@ -11,11 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link rel="canonical" href="https://geometor.github.io/posamentier/catalog/" />
-  <meta name="description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, and cross-corpus equivalence triage inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
+  <meta name="description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, geometric facts, and Appendix of Formulas inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
   <meta property="og:site_name" content="GEOMETOR" />
   <meta property="og:type" content="book" />
   <meta property="og:title" content="The Glorious Golden Ratio — Mathematical Catalog &amp; Concordance — Alfred S. Posamentier &amp; Ingmar Lehmann • GEOMETOR" />
-  <meta property="og:description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, and cross-corpus equivalence triage inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
+  <meta property="og:description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, geometric facts, and Appendix of Formulas inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
   <meta property="og:url" content="https://geometor.github.io/posamentier/catalog/" />
   <meta property="og:image" content="https://geometor.github.io/posamentier/_static/social/catalog.png" />
   <meta property="og:image:type" content="image/png" />
@@ -24,7 +24,7 @@
   <meta property="og:image:alt" content="Alfred S. Posamentier &amp; Ingmar Lehmann — GEOMETOR" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="The Glorious Golden Ratio — Mathematical Catalog &amp; Concordance — Alfred S. Posamentier &amp; Ingmar Lehmann • GEOMETOR" />
-  <meta name="twitter:description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, and cross-corpus equivalence triage inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
+  <meta name="twitter:description" content="An exact symbolic mathematical catalog, Euclidean construction taxonomy, geometric facts, and Appendix of Formulas inspired by Posamentier &amp; Lehmann’s The Glorious Golden Ratio." />
   <meta name="twitter:image" content="https://geometor.github.io/posamentier/_static/social/catalog.png" />
   <meta name="twitter:image:alt" content="Alfred S. Posamentier &amp; Ingmar Lehmann — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,29 +93,337 @@
           <div class="book-nav-center">
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../people/index.html" title="People"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="01-constructions/index.html" title="I. Sixteen Golden Ratio Constructions"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </header>
       <div class="content body book-content folio-book-page" role="main">
         <section class="level-1" id="mathematical-catalog">
         <span id="posamentier-catalog"></span><h1>Mathematical Catalog<a class="headerlink" href="#mathematical-catalog" title="Link to this heading">¶</a></h1>
-        <p class="rubric">Atomic Golden-Ratio Constructions, Theorems &amp; Cross-Corpus Equivalences</p>
+        <p class="rubric">Atomic Golden-Ratio Constructions, Geometric Facts, Appendix of Formulas &amp; Cross-Corpus Equivalences</p>
         <div class="title-page docutils container">
         <div class="line-block">
-        <div class="line"><strong>Reference Work:</strong> <em>The Glorious Golden Ratio</em> (Prometheus Books, 2011/2012, ISBN <code class="docutils literal notranslate"><span class="pre">978-1-61614-423-4</span></code>)</div>
-        <div class="line"><strong>Authors:</strong> Alfred S. Posamentier &amp; Ingmar Lehmann <em>(Ch. 7 on Fractals by Ana Lúcia Braz Dias)</em></div>
+        <div class="line"><strong>Reference Corpus:</strong> <em>The Glorious Golden Ratio</em> (Prometheus Books, 2011/2012, ISBN <code class="docutils literal notranslate"><span class="pre">978-1-61614-423-4</span></code>) &amp; Triangle/Circle Geometry Treatises</div>
+        <div class="line"><strong>Authors:</strong> <span class="person-ref" data-person="posamentier" title="Person: posamentier">Alfred S. Posamentier</span> &amp; <span class="person-ref" data-person="lehmann" title="Person: lehmann">Ingmar Lehmann</span> <em>(Ch. 7 on Fractals by :person:`Ana Lúcia Braz Dias &lt;dias&gt;`)</em></div>
         <div class="line"><strong>Digital Synthesis:</strong> GEOMETOR (100% Exact <code class="docutils literal notranslate"><span class="pre">SymPy</span></code> Algebra, <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> Constructions &amp; Equivalence Triage)</div>
         </div>
         </div>
-        <p>This catalog extracts the atomic mathematical claims, Euclidean constructions, and algebraic identities embedded across the seven chapters and 38-page Proofs Appendix (pp. 295–332) of <em>The Glorious Golden Ratio</em>, pairing each fact with an original GEOMETOR enunciation, exact symbolic proof over <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>, and structural classification (<strong>Equivalent</strong>, <strong>Shade/Variant</strong>, or <strong>Net-New</strong>) against <code class="docutils literal notranslate"><span class="pre">geometor/divine</span></code>, <code class="docutils literal notranslate"><span class="pre">geometor/knott</span></code>, and <code class="docutils literal notranslate"><span class="pre">geometor/huntley</span></code>.</p>
+        <p>This catalog synthesizes the atomic mathematical claims, Euclidean constructions, geometric facts, and algebraic identities inspired by <em>The Glorious Golden Ratio</em> and Posamentier’s triangle and circle geometry monographs, pairing each theorem with original GEOMETOR mathematical prose, exact symbolic formulations over <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>, calibrated <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> vector plates, and cross-corpus links to <span class="xref std std-ref">elements</span> and <code class="docutils literal notranslate"><span class="pre">geometor/etc</span></code>.</p>
+        <section class="level-2" id="collections">
+        <h2>Collections<a class="headerlink" href="#collections" title="Link to this heading">¶</a></h2>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="01-constructions/index.html" aria-label="POS-1.01 — Classical Square Side-Midpoint Arc Extension">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="pos-1-01" role="img" aria-label="POS-1.01 — Classical Square Side-Midpoint Arc Extension" width="680" height="480" data-svg-scope="s-9f7a3dcc">
+          <style>
+            svg[data-svg-scope="s-9f7a3dcc"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-9f7a3dcc"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-9f7a3dcc"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
+          <title>POS-1.01 — Classical Square Side-Midpoint Arc Extension</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+            <g>
+              <circle class="geom-circle aux-circle" cx="340" cy="240" r="170.69" fill="none"><title>cMB</title></circle>
+              <circle class="geom-circle golden-circle" cx="340" cy="316.33" r="94.35" fill="none"><title>cAE</title></circle>
+              <polygon class="geom-polygon poly-shape" points="340,316.33 492.67,316.33 492.67,163.67 340,163.67" />
+              <path class="geom-line aux-line" d="M 340 438 L 340 240 L 340 42" fill="none"><title>AD</title></path>
+              <path class="geom-line aux-line" d="M 142 316.33 L 340 316.33 L 538 316.33" fill="none"><title>AB</title></path>
+              <path class="geom-segment aux-segment" d="M 340 240 L 416.33 278.17 L 492.67 316.33" fill="none" />
+              <path class="geom-segment golden-major-glow" d="M 340 316.33 L 387.18 316.33 L 434.35 316.33" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 316.33 L 387.18 316.33 L 434.35 316.33" fill="none" />
+              <path class="geom-segment golden-minor" d="M 434.35 316.33 L 463.51 316.33 L 492.67 316.33" fill="none" />
+            </g>
+            <g>
+              <circle class="geom-point given-point" cx="340" cy="316.33" r="3.6"><title>A</title></circle>
+              <circle class="geom-point given-point" cx="492.67" cy="316.33" r="3.6"><title>B</title></circle>
+              <circle class="geom-point" cx="492.67" cy="163.67" r="3.6"><title>C</title></circle>
+              <circle class="geom-point" cx="340" cy="163.67" r="3.6"><title>D</title></circle>
+              <circle class="geom-point" cx="340" cy="240" r="3.6"><title>M</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="410.69" r="7.5" />
+              <circle class="geom-point golden-point" cx="340" cy="410.69" r="4.4"><title>E</title></circle>
+              <circle class="geom-point-halo" cx="434.35" cy="316.33" r="7.5" />
+              <circle class="geom-point golden-point" cx="434.35" cy="316.33" r="4.4"><title>G</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="340" y="333.33" text-anchor="middle">A</text>
+              <text class="geom-label" x="504.3" y="326.15" text-anchor="middle">B</text>
+              <text class="geom-label" x="504.3" y="161.85" text-anchor="middle">C</text>
+              <text class="geom-label" x="340" y="154.67" text-anchor="middle">D</text>
+              <text class="geom-label" x="340" y="244" text-anchor="middle">M</text>
+              <text class="geom-label" x="340" y="427.69" text-anchor="middle">E</text>
+              <text class="geom-label" x="444.46" y="328.51" text-anchor="middle">G</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="01-constructions/index.html">I. Sixteen Golden Ratio Constructions</a></h2>
+                      <p>Sixteen exact straightedge-and-compass and Mascheroni circle constructions of the Golden Ratio (POS-1.01 through POS-1.16) with calibrated .euclid-graphic SVGs.</p>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="02-golden-figures-and-facts/index.html" aria-label="Kepler's Golden Right Triangle 1 : sqrt(phi) : phi">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="kepler-triangle" role="img" aria-label="Kepler Golden Right Triangle 1 : sqrt(phi) : phi" width="680" height="480" data-svg-scope="s-e53e3703">
+          <style>
+            svg[data-svg-scope="s-e53e3703"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-e53e3703"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-e53e3703"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-e53e3703"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-e53e3703"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-e53e3703"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-e53e3703"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-e53e3703"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-e53e3703"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-e53e3703"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-e53e3703"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-e53e3703"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-e53e3703"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-e53e3703"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-e53e3703"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-e53e3703"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-e53e3703"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
+          <title>Kepler Golden Right Triangle 1 : sqrt(phi) : phi</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+            <g>
+              <circle class="geom-circle golden-circle" cx="340" cy="240" r="170.69" fill="none"><title>cM</title></circle>
+              <polygon class="geom-polygon poly-shape" points="169.31,240 510.69,240 299.71,74.13" />
+              <path class="geom-segment golden-major-glow" d="M 169.31 240 L 340 240 L 510.69 240" fill="none" />
+              <path class="geom-segment golden-major" d="M 169.31 240 L 340 240 L 510.69 240" fill="none" />
+              <path class="geom-segment golden-minor" d="M 169.31 240 L 234.51 157.07 L 299.71 74.13" fill="none" />
+            </g>
+            <g>
+              <circle class="geom-point given-point" cx="169.31" cy="240" r="3.6"><title>A</title></circle>
+              <circle class="geom-point given-point" cx="510.69" cy="240" r="3.6"><title>B</title></circle>
+              <circle class="geom-point-halo" cx="299.71" cy="74.13" r="7.5" />
+              <circle class="geom-point golden-point" cx="299.71" cy="74.13" r="4.4"><title>C</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="240" r="7.5" />
+              <circle class="geom-point golden-point" cx="340" cy="240" r="4.4"><title>M</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="156.31" y="244" text-anchor="middle">A</text>
+              <text class="geom-label" x="523.69" y="244" text-anchor="middle">B</text>
+              <text class="geom-label" x="296.64" y="65.5" text-anchor="middle">C</text>
+              <text class="geom-label" x="340" y="244" text-anchor="middle">M</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="02-golden-figures-and-facts/index.html">II. Golden Figures, Facts & Appearances</a></h2>
+                      <p>Geometric facts, algebraic properties, Kepler’s triangle, golden figures, unexpected appearances, phyllotaxis, and fractals from Chapters 2–7 of The Glorious Golden Ratio.</p>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="03-triangle-and-circle-gems/index.html" aria-label="Euler Line and Nine-Point Circle on the 13-14-15 Heron Triangle">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 480" data-graphic-id="euler-nine-point" role="img" aria-label="Euler Line &amp; Nine-Point Circle on 13-14-15 Triangle" width="680" height="480" data-svg-scope="s-942ee3c8">
+          <style>
+            svg[data-svg-scope="s-942ee3c8"] { font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            svg[data-svg-scope="s-942ee3c8"] .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round }
+            svg[data-svg-scope="s-942ee3c8"] .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round }
+            svg[data-svg-scope="s-942ee3c8"] .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none }
+            svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round }
+            svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round }
+            svg[data-svg-scope="s-942ee3c8"] .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none }
+            svg[data-svg-scope="s-942ee3c8"] .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-point.given-point { fill: #0f172a }
+            svg[data-svg-scope="s-942ee3c8"] .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7 }
+            svg[data-svg-scope="s-942ee3c8"] .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none }
+            svg[data-svg-scope="s-942ee3c8"] .geom-label { fill: #1c1917; font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: #fafaf9; stroke-opacity: 0.92; stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-circle.conic-curve { stroke: #38bdf8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-circle.aux-circle { stroke: #7dd3fc }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-circle.golden-circle { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-line { stroke: #94a3b8 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-line.aux-line { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-segment.struct-segment { stroke: #cbd5e1 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-segment.aux-segment { stroke: #64748b }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-point { fill: #38bdf8; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-point.given-point { fill: #e2e8f0 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-point.golden-point { fill: #f5c542; stroke: #141417 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-point-halo { stroke: #f5c542 }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-942ee3c8"] .geom-label { fill: #f4f4f5; stroke: #141417 }
+          </style>
+          <title>Euler Line &amp; Nine-Point Circle on 13-14-15 Triangle</title>
+          <defs>
+            <marker markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+              <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+              <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </marker>
+            <marker markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+              <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+              <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+            <g>
+              <circle class="geom-circle aux-circle" cx="340" cy="240" r="170.69" fill="none"><title>cO</title></circle>
+              <circle class="geom-circle aux-circle" cx="318.99" cy="242.63" r="84.03" fill="none"><title>cI</title></circle>
+              <circle class="geom-circle golden-circle" cx="318.99" cy="243.94" r="85.34" fill="none"><title>cN9</title></circle>
+              <polygon class="geom-polygon poly-shape" points="192.94,326.66 487.06,326.66 297.98,74.56" />
+              <path class="geom-segment golden-major-glow" d="M 340 240 L 318.99 243.94 L 297.98 247.88" fill="none" />
+              <path class="geom-segment golden-major" d="M 340 240 L 318.99 243.94 L 297.98 247.88" fill="none" />
+            </g>
+            <g>
+              <circle class="geom-point given-point" cx="192.94" cy="326.66" r="3.6"><title>A</title></circle>
+              <circle class="geom-point given-point" cx="487.06" cy="326.66" r="3.6"><title>B</title></circle>
+              <circle class="geom-point given-point" cx="297.98" cy="74.56" r="3.6"><title>C</title></circle>
+              <circle class="geom-point-halo" cx="318.99" cy="242.63" r="7.5" />
+              <circle class="geom-point golden-point" cx="318.99" cy="242.63" r="4.4"><title>I</title></circle>
+              <circle class="geom-point" cx="318.99" cy="326.66" r="3.6"><title>T</title></circle>
+              <circle class="geom-point-halo" cx="325.99" cy="242.63" r="7.5" />
+              <circle class="geom-point golden-point" cx="325.99" cy="242.63" r="4.4"><title>G</title></circle>
+              <circle class="geom-point-halo" cx="297.98" cy="247.88" r="7.5" />
+              <circle class="geom-point golden-point" cx="297.98" cy="247.88" r="4.4"><title>H</title></circle>
+              <circle class="geom-point-halo" cx="340" cy="240" r="7.5" />
+              <circle class="geom-point golden-point" cx="340" cy="240" r="4.4"><title>O</title></circle>
+              <circle class="geom-point-halo" cx="318.99" cy="243.94" r="7.5" />
+              <circle class="geom-point golden-point" cx="318.99" cy="243.94" r="4.4"><title>N9</title></circle>
+              <circle class="geom-point" cx="340" cy="326.66" r="3.6"><title>D</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="181.74" y="337.26" text-anchor="middle">A</text>
+              <text class="geom-label" x="498.26" y="337.26" text-anchor="middle">B</text>
+              <text class="geom-label" x="294.78" y="65.96" text-anchor="middle">C</text>
+              <text class="geom-label" x="306.09" y="248.24" text-anchor="middle">I</text>
+              <text class="geom-label" x="315.93" y="343.29" text-anchor="middle">T</text>
+              <text class="geom-label" x="313.22" y="249.02" text-anchor="middle">G</text>
+              <text class="geom-label" x="285.21" y="254.27" text-anchor="middle">H</text>
+              <text class="geom-label" x="340" y="244" text-anchor="middle">O</text>
+              <text class="geom-label" x="306.21" y="250.33" text-anchor="middle">N9</text>
+              <text class="geom-label" x="340" y="343.66" text-anchor="middle">D</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="03-triangle-and-circle-gems/index.html">III. Triangle & Circle Geometry Gems</a></h2>
+                      <p>Classical triangle centers, Euler line, Nine-Point Circle, Ceva, Menelaus, Stewart, Ptolemy, Brahmagupta, and Morley’s trisector theorem cross-linked to elements and etc.</p>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="04-appendix-formulas/index.html">IV. Appendix of Formulas</a></h2>
+                      <p>Exact symbolic SymPy and LaTeX Appendix of Formulas for the Golden Ratio, Fibonacci/Lucas identities, Triangle Centers & Circles, and Classical Geometric Theorems.</p>
+                  </section>
+                </div>
+              </article>
+            </section></section>
         <section class="level-2" id="chapter-architecture">
         <h2>Chapter Architecture<a class="headerlink" href="#chapter-architecture" title="Link to this heading">¶</a></h2>
         <ol class="arabic simple">
         <li><p><strong>Ch. 1 — Defining and Constructing the Golden Ratio</strong> <em>(pp. 13–38 · Proofs pp. 295–304)</em>: 16 numbered straightedge-and-compass and Mascheroni circle constructions (<code class="docutils literal notranslate"><span class="pre">POS-1.01</span></code>–<code class="docutils literal notranslate"><span class="pre">POS-1.16</span></code>).</p></li>
         <li><p><strong>Ch. 2 — History of the Golden Ratio</strong> <em>(pp. 39–48)</em>: Kepler’s <span class="math notranslate nohighlight">\(1 : \sqrt{\phi} : \phi\)</span> triangle, Euclid, Fibonacci, Pacioli, Ohm, Zeising, and exact-vs-approximate historical residual audit.</p></li>
         <li><p><strong>Ch. 3 — Numerical Value &amp; Algebraic Properties</strong> <em>(pp. 49–80 · Proofs pp. 305–311)</em>: <span class="math notranslate nohighlight">\(\phi^n = F_n \phi + F_{n-1}\)</span>, continued fraction <code class="docutils literal notranslate"><span class="pre">[1;</span> <span class="pre">1,</span> <span class="pre">1,</span> <span class="pre">...]</span></code>, nested radicals, Binet/Lucas/Cassini identities, Millin series, and <span class="math notranslate nohighlight">\(18^\circ / 36^\circ\)</span> radicals.</p></li>
-        <li><p><strong>Ch. 4 — Golden Geometric Figures</strong> <em>(pp. 81–190 · Proofs pp. 312–325)</em>: Whirling-square rectangles, adjacent semicircles cutting the square diagonal in <span class="math notranslate nohighlight">\(\phi\)</span> (<code class="docutils literal notranslate"><span class="pre">POS-4.01</span></code>), golden triangles &amp; gnomons, folded paper-strip pentagon knot (<code class="docutils literal notranslate"><span class="pre">POS-4.02</span></code>), Golden Ellipse, Golden Cuboid <span class="math notranslate nohighlight">\(1 \times \phi \times \phi^2\)</span> (<code class="docutils literal notranslate"><span class="pre">POS-4.03</span></code>), and icosahedron/dodecahedron coordinates.</p></li>
+        <li><p><strong>Ch. 4 — Golden Geometric Figures</strong> <em>(pp. 81–190 · Proofs pp. 312–325)</em>: Whirling-square rectangles, semicircle-on-side square section (<code class="docutils literal notranslate"><span class="pre">POS-4.01</span></code>), golden triangles &amp; gnomons, folded paper-strip pentagon knot (<code class="docutils literal notranslate"><span class="pre">POS-4.02</span></code>), Golden Ellipse, Golden Cuboid <span class="math notranslate nohighlight">\(1 \times \phi \times \phi^2\)</span> (<code class="docutils literal notranslate"><span class="pre">POS-4.03</span></code>), and icosahedron/dodecahedron coordinates.</p></li>
         <li><p><strong>Ch. 5 — Unexpected Appearances</strong> <em>(pp. 191–246 · Proofs pp. 326–330)</em>: Star of David hexagram <span class="math notranslate nohighlight">\(\phi\)</span> chord section (<code class="docutils literal notranslate"><span class="pre">POS-5.01</span></code>), similar triangles on reference-triangle sides, <code class="docutils literal notranslate"><span class="pre">64</span> <span class="pre">=</span> <span class="pre">65</span></code> Cassini dissection, Pascal shallow diagonals, and random-walk stopping probability <span class="math notranslate nohighlight">\(1/\phi\)</span>.</p></li>
         <li><p><strong>Ch. 6 — The Plant Kingdom</strong> <em>(pp. 247–268)</em>: Phyllotaxis parastichies and the Golden Angle <span class="math notranslate nohighlight">\(360^\circ / \phi^2\)</span> (cross-linked to <code class="docutils literal notranslate"><span class="pre">geometor/phyllotaxis</span></code>).</p></li>
         <li><p><strong>Ch. 7 — Fractals and the Golden Ratio</strong> <em>(pp. 269–292 · Proofs pp. 331–332, by Ana Lúcia Braz Dias)</em>: Symmetric Golden Fractal Tree <span class="math notranslate nohighlight">\(r = 1/\phi\)</span> (<code class="docutils literal notranslate"><span class="pre">POS-7.01</span></code>) and Sierpiński-Pentagon <span class="math notranslate nohighlight">\(r = 1/\phi^2\)</span> (<code class="docutils literal notranslate"><span class="pre">POS-7.02</span></code>).</p></li>
@@ -140,97 +448,97 @@
         </tr>
         </thead>
         <tbody>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.01</span></code></p></td>
-        <td><p>Square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>, midpoint <code class="docutils literal notranslate"><span class="pre">M</span></code> of <code class="docutils literal notranslate"><span class="pre">AB</span></code>, arc <code class="docutils literal notranslate"><span class="pre">MC</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-01.html"><span class="doc">POS-1.01 · Classical Square Side-Midpoint Arc Extension</span></a></p></td>
+        <td><p>Square <code class="docutils literal notranslate"><span class="pre">ABCD</span></code>, midpoint <code class="docutils literal notranslate"><span class="pre">M</span></code> of <code class="docutils literal notranslate"><span class="pre">AD</span></code>, arc <code class="docutils literal notranslate"><span class="pre">MB</span></code></p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-01.01</span></code> · <code class="docutils literal notranslate"><span class="pre">KNOTT-1.1</span></code> · <code class="docutils literal notranslate"><span class="pre">HUNT-02.01</span></code></p></td>
-        <td><p>Euclid II.11 (<span class="math notranslate nohighlight">\(1:2:\sqrt{5}\)</span> leg extension)</p></td>
+        <td><p><span class="xref std std-ref">Euclid II.11</span> (<span class="math notranslate nohighlight">\(1:2:\sqrt{5}\)</span> leg extension)</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.02</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-02.html"><span class="doc">POS-1.02 · 1:2:sqrt(5) Right-Triangle Hypotenuse Arc Transfer</span></a></p></td>
         <td><p><span class="math notranslate nohighlight">\(1:2:\sqrt{5}\)</span> right-triangle hypotenuse arc transfer</p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-01.02</span></code> · <code class="docutils literal notranslate"><span class="pre">KNOTT-1.1</span></code> · <code class="docutils literal notranslate"><span class="pre">HUNT-02.02</span></code></p></td>
-        <td><p>Euclid VI.30 secant transfer</p></td>
+        <td><p><span class="xref std std-ref">Euclid VI.30</span> secant transfer</p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.03</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-03.html"><span class="doc">POS-1.03 · 1x3 Three-Square Grid Angle Bisector Section</span></a></p></td>
         <td><p><span class="math notranslate nohighlight">\(1 \times 3\)</span> three-square grid + angle bisector</p></td>
         <td><p><strong>Net-New</strong></p></td>
         <td><p>Cousin of <code class="docutils literal notranslate"><span class="pre">GC-03.04</span></code></p></td>
-        <td><p>Euclid VI.3 angle-bisector ratio</p></td>
+        <td><p><span class="xref std std-ref">Euclid VI.3</span> angle-bisector ratio</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.04</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-04.html"><span class="doc">POS-1.04 · 1x2 Double-Square Shared-Midpoint Diagonal Circle</span></a></p></td>
         <td><p><span class="math notranslate nohighlight">\(1 \times 2\)</span> double-square shared-midpoint circle on diagonal</p></td>
         <td><p><strong>Variant</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-03.01</span></code> · <code class="docutils literal notranslate"><span class="pre">KNOTT-1.2</span></code></p></td>
         <td><p>Circle secant on <span class="math notranslate nohighlight">\(\sqrt{5}\)</span> diagonal</p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.05</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-05.html"><span class="doc">POS-1.05 · Unit Square Extended-Side Semicircle Through Opposite Vertex</span></a></p></td>
         <td><p>Unit square + semicircle on extended side through vertex</p></td>
         <td><p><strong>Variant</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-01.01</span></code></p></td>
         <td><p>Thales right-triangle mean proportional</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.06</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-06.html"><span class="doc">POS-1.06 · George Odom’s Inscribed Equilateral Triangle Midline Chord</span></a></p></td>
         <td><p>George Odom’s inscribed equilateral midline chord</p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-02.01</span></code></p></td>
-        <td><p>Intersecting Chords (III.35: <span class="math notranslate nohighlight">\(x(x+1)=1\)</span>)</p></td>
+        <td><p><span class="xref std std-ref">Intersecting Chords (III.35)</span></p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.07</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-07.html"><span class="doc">POS-1.07 · 2:sqrt(5):sqrt(5) Isosceles Triangle Incircle Altitude Section</span></a></p></td>
         <td><p><span class="math notranslate nohighlight">\(2:\sqrt{5}:\sqrt{5}\)</span> isosceles incircle (<span class="math notranslate nohighlight">\(r = 1/\phi\)</span>)</p></td>
         <td><p><strong>Net-New</strong></p></td>
         <td><p>Cousin of <code class="docutils literal notranslate"><span class="pre">GC-03.06</span></code></p></td>
         <td><p>Half-angle tangent <span class="math notranslate nohighlight">\(\tan(\theta/2) = 1/\phi\)</span></p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.08</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-08.html"><span class="doc">POS-1.08 · Unit Square Diagonal Circle &amp; Equilateral Hybrid Locus</span></a></p></td>
         <td><p>Unit square <span class="math notranslate nohighlight">\(\sqrt{2}\)</span>-diagonal circle + equilateral hybrid</p></td>
         <td><p><strong>Net-New</strong></p></td>
         <td><p>—</p></td>
         <td><p>Quadratic circle–circle radical locus</p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.09</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-09.html"><span class="doc">POS-1.09 · Circle Unit Chord &amp; Equal External Tangent Secant Cut</span></a></p></td>
         <td><p>Circle unit chord <code class="docutils literal notranslate"><span class="pre">AB</span></code> &amp; equal external tangent <code class="docutils literal notranslate"><span class="pre">PT</span></code></p></td>
         <td><p><strong>Net-New</strong></p></td>
         <td><p>Dual of <code class="docutils literal notranslate"><span class="pre">GC-06.01</span></code></p></td>
-        <td><p>Tangent–Secant Power (III.36: <span class="math notranslate nohighlight">\(x(x+1)=1\)</span>)</p></td>
+        <td><p><span class="xref std std-ref">Tangent–Secant Power (III.36)</span></p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.10</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-10.html"><span class="doc">POS-1.10 · Huntley’s 3-4-5 Right-Triangle Angle Bisector Circle</span></a></p></td>
         <td><p>Huntley’s <code class="docutils literal notranslate"><span class="pre">3–4–5</span></code> right-triangle angle bisector circle</p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-04.01</span></code> · <code class="docutils literal notranslate"><span class="pre">HUNT-03.01</span></code></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">3–4–5</span></code> half-angle tangent <span class="math notranslate nohighlight">\(1/2 \implies \sqrt{5}\)</span></p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.11</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-11.html"><span class="doc">POS-1.11 · Three Concentric Circles (r = 1, 2, 4) Secant-Tangent Transversal</span></a></p></td>
         <td><p>Three concentric circles (<span class="math notranslate nohighlight">\(r = 1, 2, 4\)</span>) secant–tangent</p></td>
         <td><p><strong>Variant</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-06.02</span></code></p></td>
         <td><p>Power-of-point radial scaling</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.12</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-12.html"><span class="doc">POS-1.12 · Three Adjacent Congruent Unit Circles Outer Secant</span></a></p></td>
         <td><p>Three adjacent congruent unit circles outer secant</p></td>
         <td><p><strong>Variant</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-06.04</span></code></p></td>
         <td><p><span class="math notranslate nohighlight">\(1:2:\sqrt{5}\)</span> center-line transversal</p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.13</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-13.html"><span class="doc">POS-1.13 · Three Mutually Tangent Circles Inscribed in a Semicircle</span></a></p></td>
         <td><p>Three mutually tangent circles inside a semicircle</p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-06.07</span></code></p></td>
         <td><p>Descartes / Soddy Sangaku quadratic</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.14</span></code></p></td>
-        <td><p>Hans Walser’s coordinate-grid circles (<span class="math notranslate nohighlight">\(r = 1, 3, 3\)</span>)</p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-14.html"><span class="doc">POS-1.14 · Hans Walser’s Coordinate-Grid Radical Circles (r = 1 and r = 3)</span></a></p></td>
+        <td><p>Hans Walser’s coordinate-grid circles (<span class="math notranslate nohighlight">\(r = 1, 3\)</span>)</p></td>
         <td><p><strong>Net-New</strong></p></td>
         <td><p>—</p></td>
         <td><p>Radical-axis Cartesian intersection</p></td>
         </tr>
-        <tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.15</span></code></p></td>
+        <tr class="row-even"><td><p><a class="reference internal" href="01-constructions/pos-1-15.html"><span class="doc">POS-1.15 · Right-Triangle Two-Arc Radical Leg Difference</span></a></p></td>
         <td><p>Right-triangle two-arc radical-leg difference</p></td>
         <td><p><strong>Variant</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-01.02</span></code> · <code class="docutils literal notranslate"><span class="pre">HUNT-02.02</span></code></p></td>
         <td><p><span class="math notranslate nohighlight">\(1:2:\sqrt{5}\)</span> difference of arcs</p></td>
         </tr>
-        <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">POS-1.16</span></code></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="01-constructions/pos-1-16.html"><span class="doc">POS-1.16 · Mascheroni / Hofstetter Compass-Only Circle Construction</span></a></p></td>
         <td><p>Kurt Hofstetter’s 5-circle compass-only construction</p></td>
         <td><p><strong>Equivalent</strong></p></td>
         <td><p><code class="docutils literal notranslate"><span class="pre">GC-01.05</span></code></p></td>
@@ -238,6 +546,8 @@
         </tr>
         </tbody>
         </table>
+        <div class="toctree-wrapper compound">
+        </div>
         </section>
         </section>
 
@@ -252,7 +562,7 @@
             <a class="book-toc-link" href="#">Mathematical Catalog</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="../people/index.html" title="People"><span class="nav-label">Next</span> &rarr;</a>
+            <a class="book-nav-btn" href="01-constructions/index.html" title="I. Sixteen Golden Ratio Constructions"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -300,8 +610,13 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../types/book.html">book</a></li>
+        <li><a href="../types/collection.html">collection</a></li>
+        <li><a href="../types/construction.html">construction</a></li>
+        <li><a href="../types/fact.html">fact</a></li>
+        <li><a href="../types/formula.html">formula</a></li>
         <li><a href="../types/log.html">log</a></li>
         <li><a href="../types/person.html">person</a></li>
+        <li><a href="../types/theorem.html">theorem</a></li>
       </ul>
     </aside>
   </div>

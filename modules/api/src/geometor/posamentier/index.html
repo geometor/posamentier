@@ -100,6 +100,9 @@
         <li class="toctree-l1"><a class="reference internal" href="__main__/index.html">src.geometor.posamentier.__main__</a></li>
         <li class="toctree-l1"><a class="reference internal" href="app/index.html">src.geometor.posamentier.app</a></li>
         <li class="toctree-l1"><a class="reference internal" href="catalog/index.html">src.geometor.posamentier.catalog</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="constructions/index.html">src.geometor.posamentier.constructions</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="formulas/index.html">src.geometor.posamentier.formulas</a></li>
+        <li class="toctree-l1"><a class="reference internal" href="svg/index.html">src.geometor.posamentier.svg</a></li>
         </ul>
         </div>
         </section>
@@ -107,7 +110,10 @@
         <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
         <table class="autosummary longtable docutils align-default">
         <tbody>
-        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.__version__" title="src.geometor.posamentier.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.CONSTRUCTION_BUILDERS" title="src.geometor.posamentier.CONSTRUCTION_BUILDERS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CONSTRUCTION_BUILDERS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.posamentier.__version__" title="src.geometor.posamentier.__version__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__version__</span></code></a></p></td>
         <td><p></p></td>
         </tr>
         </tbody>
@@ -119,6 +125,12 @@
         <tbody>
         <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.CatalogEntrySpec" title="src.geometor.posamentier.CatalogEntrySpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CatalogEntrySpec</span></code></a></p></td>
         <td><p>Metadata descriptor for an atomic mathematical catalog entry.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConstructionSpec</span></code></a></p></td>
+        <td><p>Verified symbolic construction model paired with golden-section endpoints.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.SvgHighlight" title="src.geometor.posamentier.SvgHighlight"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SvgHighlight</span></code></a></p></td>
+        <td><p>Specification for a golden-section segment pair highlighted in an SVG.</p></td>
         </tr>
         </tbody>
         </table>
@@ -138,6 +150,18 @@
         </tr>
         <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.posamentier.load_catalog_manifest" title="src.geometor.posamentier.load_catalog_manifest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_catalog_manifest</span></code></a>([manifest_path]) → list[CatalogEntrySpec]</p></td>
         <td><p>Load atomic catalog entries from <code class="docutils literal notranslate"><span class="pre">resources/catalog_manifest.json</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.build_construction" title="src.geometor.posamentier.build_construction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">build_construction</span></code></a>(entry_id) → ConstructionSpec</p></td>
+        <td><p>Build and return the verified <a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstructionSpec</span></code></a> for <code class="docutils literal notranslate"><span class="pre">entry_id</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.posamentier.verify_golden_ratio" title="src.geometor.posamentier.verify_golden_ratio"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_golden_ratio</span></code></a>(spec) → sympy.Expr</p></td>
+        <td><p>Assert zero floats in <code class="docutils literal notranslate"><span class="pre">spec.model</span></code> and exact equality <code class="docutils literal notranslate"><span class="pre">ratio</span> <span class="pre">==</span> <span class="pre">phi</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#src.geometor.posamentier.export_svg" title="src.geometor.posamentier.export_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">export_svg</span></code></a>(svg_markup, target) → pathlib.Path</p></td>
+        <td><p>Write <code class="docutils literal notranslate"><span class="pre">svg_markup</span></code> to <code class="docutils literal notranslate"><span class="pre">target</span></code>, creating parent directories if needed.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#src.geometor.posamentier.render_model_svg" title="src.geometor.posamentier.render_model_svg"><code class="xref py py-obj docutils literal notranslate"><span class="pre">render_model_svg</span></code></a>(model, graphic_id, title, *[, ...]) → str</p></td>
+        <td><p>Render a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> as a calibrated <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG.</p></td>
         </tr>
         </tbody>
         </table>
@@ -229,6 +253,138 @@
         </dd></dl>
 
         <dl class="py data">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.CONSTRUCTION_BUILDERS">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">CONSTRUCTION_BUILDERS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">collections.abc.Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><span class="pre">ConstructionSpec</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.CONSTRUCTION_BUILDERS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">ConstructionSpec</span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Verified symbolic construction model paired with golden-section endpoints.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.id">
+        <span class="sig-name descname"><span class="pre">id</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.id" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.title" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.model">
+        <span class="sig-name descname"><span class="pre">model</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">geometor.model.Model</span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.model" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.major">
+        <span class="sig-name descname"><span class="pre">major</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.major" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.minor">
+        <span class="sig-name descname"><span class="pre">minor</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.minor" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.given_points">
+        <span class="sig-name descname"><span class="pre">given_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">frozenset</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.given_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.golden_points">
+        <span class="sig-name descname"><span class="pre">golden_points</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">frozenset</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.golden_points" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.golden_circles">
+        <span class="sig-name descname"><span class="pre">golden_circles</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">frozenset</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.golden_circles" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.extra_segments">
+        <span class="sig-name descname"><span class="pre">extra_segments</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.extra_segments" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.ratio">
+        <span class="sig-name descname"><span class="pre">ratio</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact symbolic length ratio <code class="docutils literal notranslate"><span class="pre">|major|</span> <span class="pre">/</span> <span class="pre">|minor|</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py method">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.ConstructionSpec.to_svg">
+        <span class="sig-name descname"><span class="pre">to_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">graphic_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#src.geometor.posamentier.ConstructionSpec.to_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Render this construction to a calibrated <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG.</p>
+        </dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.build_construction">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">build_construction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">entry_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><span class="pre">ConstructionSpec</span></a></span></span><a class="headerlink" href="#src.geometor.posamentier.build_construction" title="Link to this definition">¶</a></dt>
+        <dd><p>Build and return the verified <a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstructionSpec</span></code></a> for <code class="docutils literal notranslate"><span class="pre">entry_id</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.verify_golden_ratio">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">verify_golden_ratio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">spec</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#src.geometor.posamentier.ConstructionSpec" title="src.geometor.posamentier.ConstructionSpec"><span class="pre">ConstructionSpec</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#src.geometor.posamentier.verify_golden_ratio" title="Link to this definition">¶</a></dt>
+        <dd><p>Assert zero floats in <code class="docutils literal notranslate"><span class="pre">spec.model</span></code> and exact equality <code class="docutils literal notranslate"><span class="pre">ratio</span> <span class="pre">==</span> <span class="pre">phi</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.SvgHighlight">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">SvgHighlight</span></span><a class="headerlink" href="#src.geometor.posamentier.SvgHighlight" title="Link to this definition">¶</a></dt>
+        <dd><p>Specification for a golden-section segment pair highlighted in an SVG.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.SvgHighlight.p1">
+        <span class="sig-name descname"><span class="pre">p1</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#src.geometor.posamentier.SvgHighlight.p1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.SvgHighlight.p2">
+        <span class="sig-name descname"><span class="pre">p2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#src.geometor.posamentier.SvgHighlight.p2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.SvgHighlight.role">
+        <span class="sig-name descname"><span class="pre">role</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'golden-major'</span></span><a class="headerlink" href="#src.geometor.posamentier.SvgHighlight.role" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.export_svg">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">export_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">svg_markup</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#src.geometor.posamentier.export_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Write <code class="docutils literal notranslate"><span class="pre">svg_markup</span></code> to <code class="docutils literal notranslate"><span class="pre">target</span></code>, creating parent directories if needed.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="src.geometor.posamentier.render_model_svg">
+        <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">render_model_svg</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphic_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">golden_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">given_points</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">golden_segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#src.geometor.posamentier.SvgHighlight" title="src.geometor.posamentier.SvgHighlight"><span class="pre">SvgHighlight</span></a><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">extra_segments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">golden_circles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">680</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">480</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#src.geometor.posamentier.render_model_svg" title="Link to this definition">¶</a></dt>
+        <dd><p>Render a <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> as a calibrated <code class="docutils literal notranslate"><span class="pre">.euclid-graphic</span></code> SVG.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Exact symbolic geometry model.</p></li>
+        <li><p><strong>graphic_id</strong> – Identifier placed in <code class="docutils literal notranslate"><span class="pre">data-graphic-id</span></code>.</p></li>
+        <li><p><strong>title</strong> – Human-readable title and <code class="docutils literal notranslate"><span class="pre">aria-label</span></code>.</p></li>
+        <li><p><strong>golden_points</strong> – Point IDs rendered with a golden halo.</p></li>
+        <li><p><strong>given_points</strong> – Point IDs styled as base given points.</p></li>
+        <li><p><strong>golden_segments</strong> – Highlighted golden-major / golden-minor / structural segments.</p></li>
+        <li><p><strong>extra_segments</strong> – Additional <code class="docutils literal notranslate"><span class="pre">(p1,</span> <span class="pre">p2,</span> <span class="pre">css_class)</span></code> segments to draw.</p></li>
+        <li><p><strong>golden_circles</strong> – Circle IDs styled as golden circles.</p></li>
+        <li><p><strong>width</strong> – SVG viewport width in pixels.</p></li>
+        <li><p><strong>height</strong> – SVG viewport height in pixels.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Complete <code class="docutils literal notranslate"><span class="pre">&lt;svg</span> <span class="pre">class=&quot;euclid-graphic&quot;</span> <span class="pre">...&gt;...&lt;/svg&gt;</span></code> markup.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py data">
         <dt class="sig sig-object py" id="src.geometor.posamentier.__version__">
         <span class="sig-prename descclassname"><span class="pre">src.geometor.posamentier.</span></span><span class="sig-name descname"><span class="pre">__version__</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'0.1.0'</span></span><a class="headerlink" href="#src.geometor.posamentier.__version__" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
@@ -293,8 +449,13 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../../../../../types/book.html">book</a></li>
+        <li><a href="../../../../../types/collection.html">collection</a></li>
+        <li><a href="../../../../../types/construction.html">construction</a></li>
+        <li><a href="../../../../../types/fact.html">fact</a></li>
+        <li><a href="../../../../../types/formula.html">formula</a></li>
         <li><a href="../../../../../types/log.html">log</a></li>
         <li><a href="../../../../../types/person.html">person</a></li>
+        <li><a href="../../../../../types/theorem.html">theorem</a></li>
       </ul>
     </aside>
   </div>

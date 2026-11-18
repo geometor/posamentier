@@ -1,0 +1,48 @@
+:type: construction
+:order: 8
+:excerpt: Unit Square Diagonal Circle & Equilateral Hybrid Locus — exact symbolic construction over Q(sqrt(2), sqrt(3), phi) (Net-New).
+
+POS-1.08 · Unit Square Diagonal Circle & Equilateral Hybrid Locus
+=================================================================
+
+**Field:** :math:`Q(sqrt(2), sqrt(3), phi)` | **Classification:** **Net-New** | **Concordance:** Quadratic circle–circle radical locus
+
+.. enunciation::
+
+   Erect equilateral triangle :g:`ABE` on side :g:`AB` of unit square :g:`ABCD`. A circle :g:`cE` centered at :g:`E` with radius equal to square diagonal :g:`AC` (:math:`\sqrt{2}`) cuts ray :g:`AB` at :g:`F` so that :math:`|AB|/|BF| = \phi`.
+
+.. picture:: pos-1-08.svg
+   :alt: POS-1.08 — Unit Square Diagonal Circle & Equilateral Hybrid Locus
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct unit square :g:`ABCD` with diagonal :g:`AC` of length :math:`\sqrt{2}`.
+
+.. step::
+
+   Erect equilateral triangle :g:`ABE` on :g:`AB` with apex :g:`E` :math:`=(1/2, \sqrt{3}/2)`.
+
+.. step::
+
+   Draw circle :g:`cE` centered at :g:`E` of radius :math:`\sqrt{2}`, cutting ray :g:`AB` beyond :g:`B` at :g:`F`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Any point :math:`(x, 0)` on :g:`cE` satisfies :math:`(x - 1/2)^2 + (\sqrt{3}/2)^2 = 2`, which simplifies to :math:`x^2 - x - 1 = 0`. Its positive root is :math:`x = \phi`, so :math:`|AB|=1` and :math:`|BF|=1/\phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AB` / :g:`BF` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(sqrt(2), sqrt(3), phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_08`

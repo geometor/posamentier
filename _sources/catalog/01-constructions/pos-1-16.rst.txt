@@ -1,0 +1,48 @@
+:type: construction
+:order: 16
+:excerpt: Mascheroni / Hofstetter Compass-Only Circle Construction — exact symbolic construction over Q(phi) (Equivalent).
+
+POS-1.16 · Mascheroni / Hofstetter Compass-Only Circle Construction
+===================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Equivalent** | **Concordance:** GC-01.05 · :person:`Kurt Hofstetter <hofstetter>`
+
+.. enunciation::
+
+   Using strictly five compass circles and zero straightedge lines, Hofstetter constructs :g:`X` collinear with :g:`C` and :g:`D` such that :math:`|CD|/|DX| = \phi`.
+
+.. picture:: pos-1-16.svg
+   :alt: POS-1.16 — Mascheroni / Hofstetter Compass-Only Circle Construction
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Draw unit circles :g:`c1` centered at :g:`A` :math:`=(0,0)` through :g:`B` :math:`=(1,0)` and :g:`c2` centered at :g:`B` through :g:`A`, intersecting at :g:`C` and :g:`D`.
+
+.. step::
+
+   Draw :g:`c3` centered at :g:`C` through :g:`D`, meeting :g:`c1` at :g:`E` and :g:`c2` at :g:`F`.
+
+.. step::
+
+   Draw :g:`c4` centered at :g:`B` through :g:`E` and :g:`c5` centered at :g:`A` through :g:`F`, intersecting below :g:`AB` at :g:`X`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+With :math:`|CD| = \sqrt{3}` and radii :math:`|BE| = |AF| = 2`, :math:`X = (1/2, -\sqrt{15}/2)`. Hence :math:`|DX| = (\sqrt{15}-\sqrt{3})/2 = \sqrt{3}/\phi`, yielding :math:`|CD|/|DX| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`CD` / :g:`DX` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_16`

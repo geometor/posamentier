@@ -1,0 +1,48 @@
+:type: construction
+:order: 2
+:excerpt: 1:2:sqrt(5) Right-Triangle Hypotenuse Arc Transfer — exact symbolic construction over Q(phi) (Equivalent).
+
+POS-1.02 · 1:2:sqrt(5) Right-Triangle Hypotenuse Arc Transfer
+=============================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Equivalent** | **Concordance:** GC-01.02 · KNOTT-1.1 · HUNT-02.02 · :ref:`Euclid VI.30 <elements:vi.30>`
+
+.. enunciation::
+
+   In a :math:`1:2:\sqrt{5}` right triangle :g:`ABC` with right angle at :g:`B`, subtract leg :g:`BC` from hypotenuse :g:`AC` via circle :g:`cCB` at :g:`D`, and transfer :g:`AD` onto :g:`AB` at :g:`G` so that :math:`|AG|/|GB| = \phi`.
+
+.. picture:: pos-1-02.svg
+   :alt: POS-1.02 — 1:2:sqrt(5) Right-Triangle Hypotenuse Arc Transfer
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct right triangle :g:`ABC` with :g:`A` :math:`=(0,0)`, :g:`B` :math:`=(2,0)`, and :g:`C` :math:`=(2,1)`.
+
+.. step::
+
+   Draw circle :g:`cCB` centered at :g:`C` through :g:`B` (radius :math:`1`), cutting hypotenuse :g:`AC` at :g:`D`.
+
+.. step::
+
+   Draw circle :g:`cAD` centered at :g:`A` through :g:`D`, cutting base :g:`AB` at :g:`G`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Since :math:`|AC| = \sqrt{5}` and :math:`|CD| = 1`, :math:`|AD| = \sqrt{5} - 1`. Swinging :math:`|AD|` onto :math:`|AB| = 2` leaves :math:`|GB| = 3 - \sqrt{5}`, so :math:`|AG|/|GB| = (\sqrt{5}-1)/(3-\sqrt{5}) = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AG` / :g:`GB` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_02`

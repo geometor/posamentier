@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" viewBox="0 0 680 480" data-graphic-id="euler-nine-point" role="img" aria-label="Euler Line &amp; Nine-Point Circle on 13-14-15 Triangle">
+  <title>Euler Line &amp; Nine-Point Circle on 13-14-15 Triangle</title>
+  <defs>
+    <marker id="geom-tick-1" markerUnits="userSpaceOnUse" viewBox="-5 -8 10 16" markerWidth="10" markerHeight="16" orient="auto">
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" markerUnits="userSpaceOnUse" viewBox="-7 -8 14 16" markerWidth="14" markerHeight="16" orient="auto">
+      <line x1="-2.4" y1="-6.2" x2="-2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+      <line x1="2.4" y1="-6.2" x2="2.4" y2="6.2" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" markerUnits="userSpaceOnUse" viewBox="-9 -8 18 16" markerWidth="18" markerHeight="16" orient="auto">
+      <line x1="-4.4" y1="-6.2" x2="-4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="0" y1="-6.2" x2="0" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+      <line x1="4.4" y1="-6.2" x2="4.4" y2="6.2" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  .euclid-graphic .svg-bg { fill: none; }
+  .euclid-graphic .geom-circle.conic-curve { fill: none; stroke: #0284c7; stroke-width: 1.85; stroke-opacity: 0.82; }
+  .euclid-graphic .geom-circle.aux-circle { fill: none; stroke: #0369a1; stroke-width: 1.35; stroke-dasharray: 5 3.5; stroke-opacity: 0.62; }
+  .euclid-graphic .geom-circle.golden-circle { fill: none; stroke: #d4af37; stroke-width: 2.35; stroke-opacity: 0.92; }
+  .euclid-graphic .geom-polygon.poly-shape { fill: #0284c7; fill-opacity: 0.07; stroke: #334155; stroke-width: 1.85; stroke-linejoin: round; }
+  .euclid-graphic .geom-polygon.golden-poly { fill: #d4af37; fill-opacity: 0.11; stroke: #d4af37; stroke-width: 2.1; stroke-linejoin: round; }
+  .euclid-graphic .geom-line { fill: none; stroke: #475569; stroke-width: 1.45; stroke-linecap: round; stroke-opacity: 0.72; }
+  .euclid-graphic .geom-line.aux-line { fill: none; stroke: #64748b; stroke-width: 1.2; stroke-dasharray: 5 3.5; stroke-opacity: 0.58; }
+  .euclid-graphic .geom-segment.struct-segment { fill: none; stroke: #334155; stroke-width: 1.95; stroke-linecap: round; stroke-opacity: 0.88; }
+  .euclid-graphic .geom-segment.aux-segment { fill: none; stroke: #64748b; stroke-width: 1.35; stroke-dasharray: 4.5 3; stroke-linecap: round; stroke-opacity: 0.68; }
+  .euclid-graphic .geom-segment.golden-major-glow { fill: none; stroke: #d4af37; stroke-opacity: 0.28; stroke-width: 9.5; stroke-linecap: round; pointer-events: none; }
+  .euclid-graphic .geom-segment.golden-major { fill: none; stroke: #d4af37; color: #78350f; stroke-width: 4.3; stroke-linecap: round; }
+  .euclid-graphic .geom-segment.golden-minor { fill: none; stroke: #c2410c; color: #7c2d12; stroke-width: 3.7; stroke-linecap: round; }
+  .euclid-graphic .geom-overlay { fill: none; stroke: none; stroke-width: 10; stroke-linecap: round; opacity: 0; pointer-events: none; }
+  .euclid-graphic .geom-point { fill: #0369a1; stroke: #fafaf9; stroke-width: 1.5; }
+  .euclid-graphic .geom-point.given-point { fill: #0f172a; }
+  .euclid-graphic .geom-point.golden-point { fill: #d4af37; stroke: #1c1917; stroke-width: 1.7; }
+  .euclid-graphic .geom-point-halo { fill: none; stroke: #d4af37; stroke-opacity: 0.55; stroke-width: 1.8; pointer-events: none; }
+  .euclid-graphic .geom-label {
+    fill: #1c1917;
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: #fafaf9;
+    stroke-opacity: 0.92;
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic .geom-circle.conic-curve { stroke: #38bdf8; }
+    .euclid-graphic .geom-circle.aux-circle { stroke: #7dd3fc; }
+    .euclid-graphic .geom-circle.golden-circle { stroke: #f5c542; }
+    .euclid-graphic .geom-polygon.poly-shape { fill: #38bdf8; stroke: #cbd5e1; }
+    .euclid-graphic .geom-polygon.golden-poly { fill: #f5c542; stroke: #f5c542; }
+    .euclid-graphic .geom-line { stroke: #94a3b8; }
+    .euclid-graphic .geom-line.aux-line { stroke: #64748b; }
+    .euclid-graphic .geom-segment.struct-segment { stroke: #cbd5e1; }
+    .euclid-graphic .geom-segment.aux-segment { stroke: #64748b; }
+    .euclid-graphic .geom-segment.golden-major-glow { stroke: #f5c542; stroke-opacity: 0.32; }
+    .euclid-graphic .geom-segment.golden-major { stroke: #f5c542; color: #fef3c7; }
+    .euclid-graphic .geom-segment.golden-minor { stroke: #fb923c; color: #ffedd5; }
+    .euclid-graphic .geom-point { fill: #38bdf8; stroke: #141417; }
+    .euclid-graphic .geom-point.given-point { fill: #e2e8f0; }
+    .euclid-graphic .geom-point.golden-point { fill: #f5c542; stroke: #141417; }
+    .euclid-graphic .geom-point-halo { stroke: #f5c542; }
+    .euclid-graphic .geom-label { fill: #f4f4f5; stroke: #141417; }
+  }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="480" rx="6" fill="none" />
+  <g id="elements">
+    <g id="graphics">
+      <circle class="geom-circle aux-circle" cx="340" cy="240" r="170.69" data-ref="cO" fill="none"><title>cO</title></circle>
+      <circle class="geom-circle aux-circle" cx="318.99" cy="242.63" r="84.03" data-ref="cI" fill="none"><title>cI</title></circle>
+      <circle class="geom-circle golden-circle" cx="318.99" cy="243.94" r="85.34" data-ref="cN9" fill="none"><title>cN9</title></circle>
+      <polygon class="geom-polygon poly-shape" points="192.94,326.66 487.06,326.66 297.98,74.56" data-ref="&lt; A B C &gt;" data-aliases="ABC" />
+      <path class="geom-segment golden-major-glow" d="M 340 240 L 318.99 243.94 L 297.98 247.88" fill="none" />
+      <path class="geom-segment golden-major" d="M 340 240 L 318.99 243.94 L 297.98 247.88" data-ref="/ O H /" data-aliases="/ H O / | OH | HO" fill="none" />
+    </g>
+    <g id="highlights" style="pointer-events: none;">
+      <path class="geom-overlay" d="M 340 240 L 318.99 243.94 L 297.98 247.88" data-ref="/ O H /" data-aliases="/ H O / | OH | HO" />
+    </g>
+    <g id="points">
+      <circle class="geom-point given-point" cx="192.94" cy="326.66" r="3.6" data-ref="A"><title>A</title></circle>
+      <circle class="geom-point given-point" cx="487.06" cy="326.66" r="3.6" data-ref="B"><title>B</title></circle>
+      <circle class="geom-point given-point" cx="297.98" cy="74.56" r="3.6" data-ref="C"><title>C</title></circle>
+      <circle class="geom-point-halo" cx="318.99" cy="242.63" r="7.5" />
+      <circle class="geom-point golden-point" cx="318.99" cy="242.63" r="4.4" data-ref="I"><title>I</title></circle>
+      <circle class="geom-point" cx="318.99" cy="326.66" r="3.6" data-ref="T"><title>T</title></circle>
+      <circle class="geom-point-halo" cx="325.99" cy="242.63" r="7.5" />
+      <circle class="geom-point golden-point" cx="325.99" cy="242.63" r="4.4" data-ref="G"><title>G</title></circle>
+      <circle class="geom-point-halo" cx="297.98" cy="247.88" r="7.5" />
+      <circle class="geom-point golden-point" cx="297.98" cy="247.88" r="4.4" data-ref="H"><title>H</title></circle>
+      <circle class="geom-point-halo" cx="340" cy="240" r="7.5" />
+      <circle class="geom-point golden-point" cx="340" cy="240" r="4.4" data-ref="O"><title>O</title></circle>
+      <circle class="geom-point-halo" cx="318.99" cy="243.94" r="7.5" />
+      <circle class="geom-point golden-point" cx="318.99" cy="243.94" r="4.4" data-ref="N9"><title>N9</title></circle>
+      <circle class="geom-point" cx="340" cy="326.66" r="3.6" data-ref="D"><title>D</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="181.74" y="337.26" text-anchor="middle" data-ref="A">A</text>
+      <text class="geom-label" x="498.26" y="337.26" text-anchor="middle" data-ref="B">B</text>
+      <text class="geom-label" x="294.78" y="65.96" text-anchor="middle" data-ref="C">C</text>
+      <text class="geom-label" x="306.09" y="248.24" text-anchor="middle" data-ref="I">I</text>
+      <text class="geom-label" x="315.93" y="343.29" text-anchor="middle" data-ref="T">T</text>
+      <text class="geom-label" x="313.22" y="249.02" text-anchor="middle" data-ref="G">G</text>
+      <text class="geom-label" x="285.21" y="254.27" text-anchor="middle" data-ref="H">H</text>
+      <text class="geom-label" x="340" y="244" text-anchor="middle" data-ref="O">O</text>
+      <text class="geom-label" x="306.21" y="250.33" text-anchor="middle" data-ref="N9">N9</text>
+      <text class="geom-label" x="340" y="343.66" text-anchor="middle" data-ref="D">D</text>
+    </g>
+  </g>
+</svg>

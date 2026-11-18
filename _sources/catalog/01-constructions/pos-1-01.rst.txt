@@ -1,0 +1,52 @@
+:type: construction
+:order: 1
+:excerpt: Classical Square Side-Midpoint Arc Extension — exact symbolic construction over Q(phi) (Equivalent).
+
+POS-1.01 · Classical Square Side-Midpoint Arc Extension
+=======================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Equivalent** | **Concordance:** GC-01.01 · KNOTT-1.1 · HUNT-02.01 · :ref:`Euclid II.11 <elements:ii.11>`
+
+.. enunciation::
+
+   Given segment :g:`AB`, erect square :g:`ABCD`, bisect side :g:`AD` at :g:`M`, transfer :g:`MB` onto ray :g:`DA` beyond :g:`A` at :g:`E`, and swing :g:`AE` onto :g:`AB` at :g:`G` so that :math:`|AG|/|GB| = \phi`.
+
+.. picture:: pos-1-01.svg
+   :alt: POS-1.01 — Classical Square Side-Midpoint Arc Extension
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Given :g:`A` :math:`=(0,0)` and :g:`B` :math:`=(2,0)`, erect square :g:`ABCD` with :g:`C` :math:`=(2,2)` and :g:`D` :math:`=(0,2)`.
+
+.. step::
+
+   Bisect :g:`AD` at :g:`M` :math:`=(0,1)` and draw circle :g:`cMB` centered at :g:`M` through :g:`B`.
+
+.. step::
+
+   Intersect :g:`cMB` with line :g:`AD` below :g:`A` at :g:`E` :math:`=(0, 1-\sqrt{5})`.
+
+.. step::
+
+   Draw circle :g:`cAE` centered at :g:`A` through :g:`E`, cutting :g:`AB` at :g:`G` :math:`=(\sqrt{5}-1, 0)`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Right triangle :math:`\triangle MAB` has legs :math:`1` and :math:`2`, giving hypotenuse :math:`|MB| = \sqrt{5}`. Thus :math:`|AG| = |AE| = \sqrt{5} - 1 = 2/\phi` and :math:`|GB| = 3 - \sqrt{5} = 2/\phi^2`, yielding :math:`|AG|/|GB| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AG` / :g:`GB` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_01`

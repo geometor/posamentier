@@ -1,0 +1,92 @@
+src.geometor.posamentier.svg
+============================
+
+.. py:module:: src.geometor.posamentier.svg
+
+.. autoapi-nested-parse::
+
+   Theme-adaptive ``.euclid-graphic`` SVG renderer for ``geometor.posamentier``.
+
+   Generates publication-grade interactive SVGs from exact symbolic
+   :class:`~geometor.model.Model` constructions, conforming to the PHOTON Publish
+   Book Codex contract (``svg.euclid-graphic``, ``#geom-tick-1..3``,
+   ``prefers-color-scheme: dark``, 3-vertex ``<path>`` segments, and canonical
+   ``data-ref`` / ``data-aliases`` attributes for ``geometor_interactive.js``).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.svg.EMBEDDED_SVG_STYLE
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.svg.SvgHighlight
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   src.geometor.posamentier.svg.render_model_svg
+   src.geometor.posamentier.svg.export_svg
+
+
+Module Contents
+---------------
+
+.. py:data:: EMBEDDED_SVG_STYLE
+   :type:  str
+   :value: ''
+
+
+.. py:class:: SvgHighlight
+
+   Specification for a golden-section segment pair highlighted in an SVG.
+
+
+   .. py:attribute:: p1
+      :type:  str
+
+
+   .. py:attribute:: p2
+      :type:  str
+
+
+   .. py:attribute:: role
+      :type:  str
+      :value: 'golden-major'
+
+
+
+.. py:function:: render_model_svg(model: geometor.model.Model, graphic_id: str, title: str, *, golden_points: set[str] | None = None, given_points: set[str] | None = None, golden_segments: list[SvgHighlight] | None = None, extra_segments: list[tuple[str, str, str]] | None = None, golden_circles: set[str] | None = None, width: int = 680, height: int = 480) -> str
+
+   Render a :class:`~geometor.model.Model` as a calibrated ``.euclid-graphic`` SVG.
+
+   :param model: Exact symbolic geometry model.
+   :param graphic_id: Identifier placed in ``data-graphic-id``.
+   :param title: Human-readable title and ``aria-label``.
+   :param golden_points: Point IDs rendered with a golden halo.
+   :param given_points: Point IDs styled as base given points.
+   :param golden_segments: Highlighted golden-major / golden-minor / structural segments.
+   :param extra_segments: Additional ``(p1, p2, css_class)`` segments to draw.
+   :param golden_circles: Circle IDs styled as golden circles.
+   :param width: SVG viewport width in pixels.
+   :param height: SVG viewport height in pixels.
+
+   :returns: Complete ``<svg class="euclid-graphic" ...>...</svg>`` markup.
+
+
+.. py:function:: export_svg(svg_markup: str, target: pathlib.Path) -> pathlib.Path
+
+   Write ``svg_markup`` to ``target``, creating parent directories if needed.
+
+

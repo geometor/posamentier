@@ -1,0 +1,48 @@
+:type: construction
+:order: 6
+:excerpt: George Odom's Inscribed Equilateral Triangle Midline Chord — exact symbolic construction over Q(sqrt(3), phi) (Equivalent).
+
+POS-1.06 · George Odom's Inscribed Equilateral Triangle Midline Chord
+=====================================================================
+
+**Field:** :math:`Q(sqrt(3), phi)` | **Classification:** **Equivalent** | **Concordance:** GC-02.01 · :ref:`Euclid III.35 <elements:iii.35>` · :person:`George Odom <odom>`
+
+.. enunciation::
+
+   In equilateral triangle :g:`ABC` inscribed in circle :g:`cO`, the line through midpoints :g:`M` and :g:`N` of :g:`AB` and :g:`AC` meets :g:`cO` at :g:`P` so that :math:`|MN|/|NP| = \phi`.
+
+.. picture:: pos-1-06.svg
+   :alt: POS-1.06 — George Odom's Inscribed Equilateral Triangle Midline Chord
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Inscribe equilateral :g:`ABC` in circle :g:`cO` centered at :g:`O` :math:`=(0,0)` of radius :math:`2`.
+
+.. step::
+
+   Mark midpoints :g:`M` of :g:`AB` and :g:`N` of :g:`AC`.
+
+.. step::
+
+   Extend chord :g:`MN` to meet circle :g:`cO` at :g:`P` beyond :g:`N`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+By :ref:`Intersecting Chords (Euclid III.35) <elements:iii.35>` on :g:`AC` and :g:`MP` at :g:`N`, :math:`|MN|\cdot|NP| = |AN|\cdot|NC|`. With :math:`|MN|=|AN|=|NC|=\sqrt{3}`, setting :math:`x = |NP|` gives :math:`x(x + \sqrt{3}) = 3`, so :math:`|MN|/|NP| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`MN` / :g:`NP` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(sqrt(3), phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_06`

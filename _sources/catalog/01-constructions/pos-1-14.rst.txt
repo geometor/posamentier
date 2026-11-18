@@ -1,0 +1,48 @@
+:type: construction
+:order: 14
+:excerpt: Hans Walser's Coordinate-Grid Radical Circles (r = 1 and r = 3) — exact symbolic construction over Q(phi) (Net-New).
+
+POS-1.14 · Hans Walser's Coordinate-Grid Radical Circles (r = 1 and r = 3)
+==========================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Net-New** | **Concordance:** :person:`Hans Walser <walser>` · :cite:`walser-2001`
+
+.. enunciation::
+
+   On an integer coordinate grid, circle :g:`c1` centered at :g:`O1` :math:`=(0,0)` of radius :math:`1` and circle :g:`c2` centered at :g:`O2` :math:`=(2,1)` of radius :math:`3` define a center-line :g:`O1O2` cutting :g:`c1` at :g:`A` and :g:`B` such that :math:`|AB|/|BO2| = \phi`.
+
+.. picture:: pos-1-14.svg
+   :alt: POS-1.14 — Hans Walser's Coordinate-Grid Radical Circles (r = 1 and r = 3)
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct circle :g:`c1` centered at :g:`O1` :math:`=(0,0)` with radius :math:`1`.
+
+.. step::
+
+   Construct circle :g:`c2` centered at :g:`O2` :math:`=(2,1)` with radius :math:`3`.
+
+.. step::
+
+   Draw center-line :g:`O1O2`, cutting :g:`c1` at :g:`A` (far) and :g:`B` (near :g:`O2`).
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Since :math:`|O1O2| = \sqrt{2^2 + 1^2} = \sqrt{5}` and :math:`|AB| = 2`, :math:`|BO2| = \sqrt{5} - 1 = 2/\phi`, giving :math:`|AB|/|BO2| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AB` / :g:`BO2` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_14`

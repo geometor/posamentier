@@ -1,0 +1,48 @@
+:type: construction
+:order: 11
+:excerpt: Three Concentric Circles (r = 1, 2, 4) Secant-Tangent Transversal — exact symbolic construction over Q(phi) (Variant).
+
+POS-1.11 · Three Concentric Circles (r = 1, 2, 4) Secant-Tangent Transversal
+============================================================================
+
+**Field:** :math:`Q(phi)` | **Classification:** **Variant** | **Concordance:** GC-06.02 · Power-of-point radial scaling
+
+.. enunciation::
+
+   Three concentric circles :g:`c1`, :g:`c2`, :g:`c3` have radii :math:`1, 2, 4`. A tangent to :g:`c1` at :g:`T` cuts :g:`c2` at :g:`A, B` and :g:`c3` at :g:`D` so that :math:`|AB|/|BD| = \phi`.
+
+.. picture:: pos-1-11.svg
+   :alt: POS-1.11 — Three Concentric Circles (r = 1, 2, 4) Secant-Tangent Transversal
+
+Constructive Steps
+------------------
+
+.. step::
+
+   Construct concentric circles :g:`c1`, :g:`c2`, :g:`c3` centered at :g:`O` :math:`=(0,0)` with radii :math:`1, 2, 4`.
+
+.. step::
+
+   Draw horizontal tangent :math:`y=1` to :g:`c1` at :g:`T` :math:`=(0,1)`.
+
+.. step::
+
+   Mark intersections :g:`A, B` with :g:`c2` and :g:`D` (rightward) with :g:`c3`.
+
+Exact Symbolic Proof & Certificate
+----------------------------------
+
+Pythagoras gives :math:`|TB| = \sqrt{2^2 - 1^2} = \sqrt{3}` and :math:`|TD| = \sqrt{4^2 - 1^2} = \sqrt{15}`. Hence :math:`|AB| = 2\sqrt{3}` and :math:`|BD| = \sqrt{3}(\sqrt{5}-1) = 2\sqrt{3}/\phi`, so :math:`|AB|/|BD| = \phi`.
+
+.. list-table:: Symbolic Certificate
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Invariant
+     - Exact Symbolic Value
+   * - Golden Ratio Segment Pair
+     - :g:`AB` / :g:`BD` :math:`= \frac{1 + \sqrt{5}}{2} = \phi`
+   * - Algebraic Number Field
+     - :math:`Q(phi)`
+   * - Symbolic Validator
+     - :func:`~geometor.posamentier.constructions.build_pos_1_11`
