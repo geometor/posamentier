@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • posamentier Medallion
+   :target: https://geometor.github.io/posamentier/
+   :width: 150px
+   :align: right
+
 GEOMETOR • posamentier
 ======================
 
 **Visit the Online Archive:** https://geometor.github.io/posamentier/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • posamentier Medallion
-   :target: https://geometor.github.io/posamentier/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/catalog/01-constructions/pos-1-01.svg
    :alt: GEOMETOR • posamentier featured graphic
