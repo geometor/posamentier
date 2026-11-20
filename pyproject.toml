@@ -5,7 +5,7 @@ authors = [
   { name = "phiarchitect", email = "github@geometor.com" },
 ]
 description = "Exact symbolic mathematical catalog and concordance inspired by The Glorious Golden Ratio (Alfred S. Posamentier \u0026 Ingmar Lehmann)"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.13"
 license = { file = "LICENSE" }
 classifiers = [
