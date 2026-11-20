@@ -3,6 +3,17 @@ GEOMETOR • posamentier
 
 **Visit the Online Archive:** https://geometor.github.io/posamentier/
 
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • posamentier Medallion
+   :target: https://geometor.github.io/posamentier/
+   :width: 180px
+   :align: center
+
+.. image:: docsrc/catalog/01-constructions/pos-1-01.svg
+   :alt: GEOMETOR • posamentier featured graphic
+   :target: https://geometor.github.io/posamentier/
+   :align: center
+
 **Posamentier & Lehmann • The Glorious Golden Ratio • semantic digital archive**
 
 Mission
