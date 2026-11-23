@@ -16,11 +16,11 @@ The Plant Kingdom & Golden Fractals (Ch. 6 & Ch. 7)
 
    Because :math:`\phi` has the slowest-converging continued fraction ``[1; 1, 1, ...]``, this divergence minimizes radial overlap and produces visible parastichy spiral counts in consecutive Fibonacci pairs :math:`(F_k, F_{k+1})` (cross-linked to ``geometor/phyllotaxis``).
 
-2. **POS-7.01 · Symmetric Binary Golden Fractal Tree (:math:`r = 1/\phi`)**:
+2. **POS-7.01 · Symmetric Binary Golden Fractal Tree** (:math:`r = 1/\phi`):
    A symmetric binary tree with branching angle :math:`\theta = 60^\circ` (or :math:`45^\circ`–:math:`90^\circ` variants) and branch contraction factor :math:`r` achieves exact self-contact of its limiting canopy when the geometric series :math:`\sum_{k=1}^{\infty} r^k = \frac{r}{1-r}` matches the unit trunk, i.e. :math:`r^2 + r - 1 = 0 \implies r = \frac{1}{\phi} = \phi - 1`.
 
-3. **POS-7.02 · Non-Overlapping Sierpiński-Pentagon (:math:`r = 1/\phi^2`)**:
-   Replacing a regular pentagon with five corner-touching scaled copies of ratio :math:`r` without overlap requires :math:`1 - r = r\phi`? More precisely, along the base of length :math:`1`, two scaled pentagons of base :math:`r` plus the central gap of width :math:`r/\phi`? In fact, two adjacent scaled pentagons touch at a vertex when :math:`r + r\phi = 1 \implies r(1 + \phi) = 1 \implies r = \frac{1}{\phi^2} = \frac{3 - \sqrt{5}}{2}`. Its Hausdorff similarity dimension is:
+3. **POS-7.02 · Non-Overlapping Sierpiński-Pentagon** (:math:`r = 1/\phi^2`):
+   Replacing a regular pentagon with five corner-touching scaled copies of ratio :math:`r` without overlap requires two adjacent scaled pentagons along a unit base to touch at a vertex when :math:`r + r\phi = 1 \implies r(1 + \phi) = 1 \implies r = \frac{1}{\phi^2} = \frac{3 - \sqrt{5}}{2}`. Its Hausdorff similarity dimension is:
 
    .. math::
 
