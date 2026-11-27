@@ -10,7 +10,7 @@ Alfred S. Posamentier & Ingmar Lehmann
    :alt: Alfred S. Posamentier & Ingmar Lehmann Medallion
    :class: repo-medallion-hero
 
-**Alfred S. Posamentier** and **Ingmar Lehmann** assembled one of the richest modern anthologies of golden-ratio constructions and surprises in *The Glorious Golden Ratio* (2011). From sixteen distinct ruler-and-compass and Mascheroni constructions of $\phi$ to George Odom's equilateral-midline chord, Star of David hexagram sections, and golden fractal trees, their work celebrates how a single proportion recurs across unexpected geometric settings. This mathematical catalog formalizes their theorems in exact SymPy algebra over $\mathbb{Q}(\phi)$ with calibrated vector plates.
+**Alfred S. Posamentier** and **Ingmar Lehmann** assembled one of the richest modern anthologies of golden-ratio constructions and surprises in *The Glorious Golden Ratio* (2011). From sixteen distinct ruler-and-compass and Mascheroni constructions of :math:`\phi` to George Odom's equilateral-midline chord, Star of David hexagram sections, and golden fractal trees, their work celebrates how a single proportion recurs across unexpected geometric settings. This mathematical catalog formalizes their theorems in exact SymPy algebra over :math:`\mathbb{Q}(\phi)` with calibrated vector plates.
 
 Inside This Reference
 ---------------------
@@ -27,7 +27,7 @@ Inside This Reference
 
       .. rubric:: Prometheus Books · 2011 · 4 Collections · 16+ Exact Constructions
 
-      **The Glorious Golden Ratio — Mathematical Catalog & Concordance** — Atomic golden-ratio constructions (``POS-1.01``–``POS-1.16``), Kepler's $1:\sqrt{\phi}:\phi$ triangle, golden cuboids, triangle and circle gems, and an Appendix of Formulas verified in exact SymPy arithmetic.
+      **The Glorious Golden Ratio — Mathematical Catalog & Concordance** — Atomic golden-ratio constructions (``POS-1.01``–``POS-1.16``), Kepler's :math:`1:\sqrt{\phi}:\phi` triangle, golden cuboids, triangle and circle gems, and an Appendix of Formulas verified in exact SymPy arithmetic.
 
       .. container:: home-actions
 
@@ -54,7 +54,7 @@ Key Features
 
    .. container:: home-feature-card
 
-      **Exact $\mathbb{Q}(\phi)$ Algebra & Formulas**
+      **Exact** :math:`\mathbb{Q}(\phi)` **Algebra & Formulas**
 
       Verifies continued fractions, Binet/Lucas/Cassini identities, Millin series, and fractal self-similarity ratios in symbolic SymPy without floating-point rounding.
 
